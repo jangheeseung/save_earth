@@ -1,0 +1,464 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Miami - Minimal Portfolio Template 
+    Template URI: http://HasTech.com
+    Description: This is html5 template
+    Author: HasTech
+    Author URI: http://HasTech.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Template default css (css/shortcode/default.css)
+    2. Header css (css/shortcode/header.css)
+    3. Slider css (css/shortcode/slider.css)
+    4. Blog css (css/shortcode/blog.css)
+    5. Breadcrumb css (css/shortcode/breadcrumb.css)
+    6. Portfolio css (css/shortcode/portfolio.css)
+    7. Service css (css/shortcode/service.css)
+    8. Testimonial css (css/shortcode/testimonial.css)
+    9. Footer css (css/shortcode/footer.css)
+    10. About us
+    11. Pricing table
+    12. Contact us
+    13. Scrollup
+    
+-----------------------------------------------------------------------------------*/
+
+
+/*--------- 10. About us -------------*/
+
+.bg-img {
+    background: rgba(0, 0, 0, 0) url("img/bg-2.jpg") repeat scroll center center / cover;
+    height: 100vh;
+}
+.slider > img {
+    width: 100%;
+}
+.single-count {
+    text-align: center;
+}
+.count-icon {} .count-icon span {
+    font-size: 35px;
+}
+.count-title {} .count-title h2 {
+    color: #464646;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.count-title span {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: capitalize;
+}
+. {} . {} . {} .hover-style {
+    display: block;
+    position: relative;
+}
+.hover-style::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in-out 0s;
+    width: 100%;
+}
+.hover-style:hover::before {
+    opacity: 0.95;
+}
+/* skill */
+
+.skill .progress {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 6px;
+    margin-bottom: 68px;
+    overflow: visible;
+    position: relative;
+}
+.skill .progress .lead {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: -31px;
+    z-index: 99;
+}
+.skill .progress-bar {
+    background: #666 none repeat scroll 0 0;
+}
+.skill .progress-bar > span {
+    color: #333;
+    float: right;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: -4px;
+    margin-top: -27px;
+    padding: 0 5px;
+    position: relative;
+}
+.skill {
+    margin-top: 33px;
+}
+/* about */
+
+.history-text > h2 {
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.history-text > a {
+    border: 1px solid #333;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 35px;
+    padding: 6px 30px 8px;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: all .3s ease 0s;
+}
+.history-text > a:hover {
+    border: 1px solid #333;
+    color: #fff;
+    background-color: #333;
+}
+.single-about i {
+    font-size: 30px;
+}
+.single-about > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0 20px;
+    text-transform: uppercase;
+}
+.about-minimal {} .about-minimal h2 {} .minimal-img > img {
+    width: 100%;
+}
+.about-minimal {} .about-minimal ul {} .about-minimal ul li {
+    border-top: 1px solid #f6f6f6;
+    display: block;
+    line-height: 1.3em;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+    position: relative;
+}
+.about-minimal ul li:last-child {
+    border-bottom: 1px solid #eceaeb;
+}
+.about-minimal ul li::before {
+    color: #444;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 13px;
+    line-height: 12px;
+    margin-left: 0;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.about-minimal a {
+    border: 1px solid #ddd;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 5px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+.about-minimal a:hover {
+    background: #464646;
+    color: #fff;
+    border-color: #464646
+}
+.single-skill-about {
+    text-align: center;
+}
+.progress-h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+.progress.an-rs {
+    margin-bottom: 0;
+}
+.about-us-text > p {
+    color: #666;
+}
+.team-wrapper {
+    border: 1px solid #e7e7e7;
+}
+.team-member {
+    position: relative;
+}
+.team-member > img {
+    filter: grayscale(100%);
+    width: 100%;
+}
+.team-member::before {
+    background: transparent none repeat scroll 0 0;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    width: 100%;
+    z-index: 1;
+}
+.team-wrapper:hover .team-member::before {
+    background: rgba(33, 40, 45, 0.55);
+}
+.team-info {
+    padding: 15px 0;
+}
+.team-icon {
+    bottom: 30px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 99;
+}
+.team-icon > a {
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 36px;
+    margin: 0 15px;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 40px;
+    border-radius: 50%;
+}
+.team-icon > a:hover {
+    background: #fff;
+    color: #666
+}
+.team-wrapper:hover .team-icon > a {
+    opacity: 1;
+    visibility: visible;
+    margin: 0 5px
+}
+.team-info h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.team-info span {
+    color: #666;
+    text-transform: uppercase;
+}
+.team-member > img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+.count {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}
+.single-count > span {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.brand-logo-active.owl-carousel .owl-item img {
+    margin: auto;
+    width: auto;
+}
+/*----- 11. Pricing table  ------*/
+
+.single-pricing {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    padding: 55px 55px 60px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+.single-pricing:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+.pricing-top h3 {
+    color: #505050;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+.pricing-top p {
+    color: #39434a;
+    font-family: "Dosis", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 46px;
+    margin-bottom: 0;
+}
+.pricing-top p span {
+    font-size: 18px;
+    font-weight: normal;
+}
+.pricing-top p span.content-currency {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: rgb(153, 153, 153);
+}
+.pricing-top p span.content-month {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.pricing-tex li {
+    color: #333333;
+    font-size: 14px;
+    padding-bottom: 22px;
+    text-transform: capitalize;
+}
+.pricing-tex li:last-child {
+    padding-bottom: 0px;
+}
+.pricing-tex li i {
+    padding-right: 10px;
+}
+.price-btn a {
+    background-color: #39434a;
+    border: 1px solid #39434a;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px 35px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.price-btn a:hover {
+    background-color: transparent;
+    color: #39434a;
+}
+.pricing-tex > ul {
+    padding: 27px 0 44px;
+}
+.price-btn .button i {
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+
+/*--------- 12. Contact us ----------*/
+
+#hastech2 {
+    height: 402px;
+    width: 100%;
+}
+h3.main-contact {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.main-input input {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #666;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    height: 45px;
+    padding-left: 20px;
+}
+.text-leave2 textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #666;
+    font-family: "Lato", sans-serif;
+    height: 150px;
+    margin-bottom: 40px;
+    padding: 14px 20px;
+}
+.leave-form input:focus,
+.main-input input:focus,
+.text-leave textarea:focus,
+.text-leave2 textarea:focus {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #f6f6f6;
+}
+.mfp-wrap {
+    z-index: 99999999;
+}
+.mfp-bg {
+    z-index: 9999999;
+}
+.overly-style {
+    position: relative;
+}
+.overly-style:before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.video-overly-style {
+    position: relative;
+}
+.video-overly-style:before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+/*------------ 13. Scrollup ----------------*/
+
+#toTop {
+    text-align: center;
+    bottom: 35px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 12px;
+    z-index: 9999;
+}
+#toTop i {
+    background-color: #464646;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    line-height: 40px;
+}
+#toTop i:hover {
+    background-color: #666;
+    color: #fff;
+}
+.conract-area-bottom {
+    margin-top: 50px;
+}

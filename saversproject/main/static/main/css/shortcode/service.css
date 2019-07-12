@@ -1,0 +1,81 @@
+.border-top {
+    border-top: 1px solid #f6f6f6
+}
+.section-title {
+    margin: auto auto 60px;
+    width: 60%;
+}
+.section-title h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.section-title.section-style-2 {
+    width: 100%;
+}
+.section-title p {} .single-service {
+    margin-bottom: 30px;
+    padding: 70px 40px;
+    transition: all 0.6s ease 0s;
+}
+.single-service:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+}
+.single-service i {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.single-service > h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.single-service p {
+    color: #666666;
+    line-height: 26px;
+    margin: 0;
+}
+.padding-lr {
+    padding: 90px 30px 50px;
+}
+.custom-pad {
+  padding: 90px 30px 60px;
+}
+.analysis-box {
+    padding: 80px;
+}
+.analysis-area .row {} .analysis-area .row .col-md-4:nth-child(1) {
+    background: #f6f6f6;
+}
+.analysis-area .row .col-md-4:nth-child(2) {
+    background: #eee;
+}
+.analysis-area .row .col-md-4:nth-child(3) {
+    background: #f6f6f6;
+}
+.analysis-box h2 {
+    font-size: 80px;
+    font-weight: 300;
+    margin-top: 0;
+}
+.analysis-box h4 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    position: relative;
+    text-transform: uppercase;
+}
+.analysis-box h4::before {
+    background-color: #464646;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 35px;
+}
+.section-title > p {
+    color: #666;
+}
