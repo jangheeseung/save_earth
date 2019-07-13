@@ -1,0 +1,120 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>savers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <!-- <link rel="shortcut icon" type="image/x-icon" href="{%static 'main/img/favicon.png"> -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<!-- all css here -->
+        <link rel="stylesheet" href="{%static 'main/css/bootstrap.min.css'%}"> 
+        <link rel="stylesheet" href="{%static 'main/css/font-awesome.min.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/et-line-fonts.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/animate.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/owl.carousel.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/magnific-popup.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/meanmenu.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/hambuergers.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/responsive.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/shortcode/shortcodes.css'%}">
+        <link rel="stylesheet" href="{%static 'main/css/layout/layout.css'%}">
+    </head>
+    		<!-- header start -->
+		<header>
+			<div class="header-area header-sticky">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-xs-12">
+							<div class="logo">
+								<a href="{%url 'main'%}">SAVERS</a>
+							</div>
+						</div>
+						<div class="col-md-9 col-xs-12">
+							<div class="main-menu text-right">
+								<nav>
+									<ul class="menu">
+										<li><a href="{%url 'main'%}">HOME</a>
+										</li>
+										<!-- <li><a href="#">ABOUT US</a></li>
+										<li><a href="#">Portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<ul>
+												<li><a href="#">Portfolio</a></li>
+												<li><a href="#">Portfolio details</a></li>
+											</ul>
+										</li> -->
+										<li><a href="{%url 'board'%}">board</a>
+										    <!-- <ul>
+												<li><a href="#">blog</a></li>
+												<li><a href="#">blog post details</a></li>
+											</ul> -->
+										</li>
+										<li><a href="{%url 'product'%}">product</a></li>
+										<li><a href="{%url 'mypage'%}">mypage</a></li>
+										<li><a href="{%url 'login'%}">login</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="mobile-menu"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+    <body>
+       {%block content%}{%endblock%}
+        <!-- blog area end -->
+		<!-- footer start -->
+		<footer class="footer-bg gray-bg ptb-90">
+			<div class="footer-area">
+				<div class="container">
+					<div class="footer-info text-center">
+						<div class="logo logo-style">
+							<a href="#">SAVERS</a>
+						</div>
+						<ul>
+							<li>Phone : +889 945 432</li>
+							<li>Email : devitems@gmail.com</li>
+							<li>Address : 123 West Street,Melbourne Victoria</li>
+						</ul>
+						<div class="social-icon mt-20">
+							<a href="#"><i class="fab fa-google" style='font-size:20px; padding-top: 3px;'></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer end -->
+        <!-- start scrollUp  -->
+        <div id="toTop">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+
+        <script src="{%static 'main/js/bootstrap.min.js' %}"></script>
+        <script src="{%static 'main/js/headroom.min.js' %}"></script>
+        <script src="{%static 'main/js/bootstrap.imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{%static 'main/js/jquery-1.12.0.min.js' %}"></script>
+        <script src="{%static 'main/js/jquery.apper.js' %}"></script>
+        <script src="{%static 'main/js/jquery.knob.js' %}"></script>
+        <script src="{%static 'main/js/meanmenu.js' %}"></script>
+        <script src="{%static 'main/js/main.js' %}"></script>
+        <script src="{%static 'main/js/modernizr-2.8.3.min.js' %}"></script>
+        <script src="{%static 'main/js/owl.carousel.min.js' %}"></script>
+        <script src="{%static 'main/js/plugins.js' %}"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

@@ -1,0 +1,364 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+
+.slider {
+    position: relative;
+}
+.slider-bg {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/slider-bg.jpg") repeat scroll right center / cover;
+}
+.slider-bg-2 {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/slider-bg-2.jpg") repeat fixed center top / cover;
+}
+.slider-bg-3 {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/slider-bg-3.jpg") repeat fixed center center / cover;
+}
+.brand-bg-3 {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/brand.jpg") repeat center center / cover;
+}
+.count-bg {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/count.jpg") repeat center center / cover;
+}
+.my-info-text {} .info-inner {} .info-inner > span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.slider-info-text {} .slider-info-text h1 {
+    color: #444;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.slider-text {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-text h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.slider-text h2 span {} .slider-text h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.follow-me {} .follow-me span {} .follow-me a {
+    font-size: 14px;
+    margin-left: 15px;
+}
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer;
+}
+.slider-style-2 h1 {
+    color: #222;
+}
+.slider-style-2 .my-info-text {
+    background: rgba(255, 255, 255, 0.9) url("../../img/sep.png") no-repeat scroll left top;
+}
+.slider-style-4 {
+    position: static;
+    transform: inherit;
+}
+.my-info-text.slider-style-5 {} .slider-style-5 h1 {
+    color: #222
+}
+h2.headline-text {
+    color: #222;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.slider-style-4 .cd-headline.clip b {
+    font-weight: 400;
+}
+h3.heading-sub-title {
+    color: #333;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+    background-color: #666;
+}
+/* -----------------------------------
+slider 7
+
+--------------------------------------*/
+
+.slider-title {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.slider-title > span {
+    display: block;
+    font-family: dosis;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.slider-title h2,
+.slider-info-text h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+}
+.slider-title-3 h2 {
+    color: #464646;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.single-slider {
+    background-position: center center;
+    background-size: cover;
+}
+.slider-info-text > p {
+  color: #fff;
+  margin: 0 auto;
+  width: 37%;
+  font-size: 16px;
+}
+.owl-theme .owl-controls .owl-nav div {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    left: 10px;
+    opacity: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+}
+.owl-theme .owl-controls .owl-nav div.owl-next {
+    left: auto;
+    right: 10px;
+}
+.owl-theme:hover .owl-controls .owl-nav div {
+    opacity: 1;
+    visibility: visible
+}
+.owl-theme .owl-controls .owl-nav div:hover {
+    color: #999;
+}
+.border-bottom {
+    border-bottom: 1px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+}
+.slider-text-style-3 {} .slider-text-style-3 h1 {} .slider-text-style-3 span {} .slider-text-style-3 .info-inner {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: 1px solid #fff;
+    outline-offset: 8px;
+    padding: 65px;
+}
+.single-slider {
+    position: relative;
+}
+.single-slider:before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slider-title > p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 22%;
+}
+.slider-title > a,
+.slider-info-text > a {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    margin-top: 33px;
+    padding: 9px 30px 10px;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+}
+.slider-title > a:hover,
+.slider-info-text > a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.slider-img > img {
+    width: 100%;
+}
+.slider-title-3 > a {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    margin-top: 33px;
+    padding: 9px 30px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.slider-title-3 > a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.slider-area-3 .container div[class*="col-"],
+.slider-area-3 .container,
+.slider-area-3 .container .row {
+    height: 100%;
+}
+.slider-area-3 {
+    height: 700px;
+}
+.slider-area-3 .container div[class*="col-"] {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.slider-area-3 .container div[class*="col-"] .slider-img {
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+.height-100vh.youtube-bg .container {
+    display: table;
+    height: 100%;
+}
+.height-100vh.youtube-bg .container .slider-middle {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+.slider-info-text {
+    position: relative;
+    z-index: 9;
+}
+.slider-style-6 {
+    padding: 90px 0 128px;
+}
+.slider-text-6 h2 {
+    color: #333;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.slider-text-6 span {
+    color: #666;
+}
+.slider-text-6 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0;
+    width: 88%;
+}
+.slider-style-8 {
+    background-position: center center;
+    background-size: cover;
+}
+.slider-title-8 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-title-8 h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0 0 23px;
+    text-transform: uppercase;
+}
+.slider-title-8 p {
+    color: #fff;
+    width: 71%;
+}
+.slider-title-8 > a {
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+    margin-top: 33px;
+    padding: 9px 30px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.slider-title-8 > a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.slider-title-3 p {
+  font-size: 16px;
+}
+
+.slider-title-8 p {
+  font-size: 16px;
+}
+.slider-style-1 .single-slider {
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+.cd-headline.type i {
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+/* Default Slider Animations */
+
+.owl-item .slider-title * {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.owl-item.active .slider-title * {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.owl-item.active .slider-title h2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.owl-item.active .slider-title p {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.owl-item.active .slider-title a {
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}

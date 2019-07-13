@@ -1,0 +1,67 @@
+/*------------- 6. testimonial-area ---------------*/
+
+.testimonial-area {} .black-opacity {
+    position: relative;
+}
+.black-opacity::before {
+    background: #000 none repeat scroll 0 0;
+    content: " ";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.testimonial-title span {
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+.testimonial-title h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    margin: 18px 0 25px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.testimonial-title {} .single-testimonial {} .single-testimonial p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.testimonial-author {} .testimonial-author > span {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 400;
+}
+.black-text .testimonial-author > span {
+    color: #fff;
+}
+.dots-style .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+}
+.dots-style-2 .owl-dots {
+    margin-top: 0px;
+}
+.dots-style .owl-dot {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    display: inline-block;
+    height: 5px;
+    margin: 0 3px;
+    transition: all 0.3s ease 0s;
+    width: 15px;
+}
+.dots-style .owl-dot.active,
+.owl-dot:hover {
+    background: #03a9f4 none repeat scroll 0 0;
+    width: 15px;
+}
+.white-dot .owl-dot.active,
+.owl-dot:hover {
+    background: #fff none repeat scroll 0 0;
+}

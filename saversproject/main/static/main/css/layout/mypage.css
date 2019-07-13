@@ -1,0 +1,20 @@
+.mypage .section-padding {
+    padding-top: 65px;
+    padding-bottom: 65px;
+ }
+   
+@media (min-width: 992px) {
+    .mypage .section-padding {
+    padding-top: 130px;
+    padding-bottom: 130px; } 
+}
+  
+@media (min-width: 1200px) {
+    .mypage {
+    margin: 30px; } 
+}
+ 
+#body {
+    background-color: #f4ede5; 
+}
+  
