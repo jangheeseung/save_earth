@@ -1,25 +1,23 @@
 {%extends 'main/layout.html'%}
 {%load staticfiles%}
 {%block content%}
+<link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
     <body id="body">
         <div class="mypage">
-            <!-- Welcome Section -->
             <section id="gtco-welcome" class="bg-white section-padding">
-                <div class="container">
+                <div class="container_mypage">
                     <div class="section-content">
                         <div class="row">
-                            <div
-                                class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2"
-                                style="background-image: url(img/hero-2.jpg);"></div>
+                            <!-- <div class="col-sm-5 img-bg d-flex shadow align-items-center
+                            justify-content-center justify-content-md-end img-2" style="background-image:
+                            url(img/hero-2.jpg);"></div> -->
+
+                            <!-- 닉네임 나오는 부분 -->
                             <div class="col-sm-7 py-5 pl-md-0 pl-4">
-                                <div class="heading-section pl-lg-5 ml-md-5">
-                                    <span class="subheading">
-                                        About
-                                    </span>
-                                    <h2>
-                                        Welcome to Resto
-                                    </h2>
-                                </div>
+                                <h2>
+                                    Welcome to 닉네임
+                                </h2>
+
                                 <div class="pl-lg-5 ml-md-5">
                                     <p>On her way she met a copy. The copy warned the Little Blind Text, that where
                                         it came from it would have been rewritten a thousand times and everything that
@@ -57,5 +55,4 @@
             </section>
         </div>
     </body>
-    <!-- End of Welcome Section -->
     {%endblock%}
