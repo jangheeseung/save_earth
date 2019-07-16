@@ -1,6 +1,17 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-#login-block{
-width:100%;
-padding-top: 8em;
+.container_login{
+width:400px;
+margin: auto;
+padding-top: 5em;
 padding-bottom: 8em;
+}
+
+.login_text{
+text-align: center;
+}
+button{
+    margin-top:2em; 
+}
+#my-signin2{
+    margin-top:1em; 
 }
