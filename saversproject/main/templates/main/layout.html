@@ -3,17 +3,19 @@
 <html class="no-js" lang="zxx">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="x-ua-compatible" content="utf-8">
+		<!-- title img -->
+		<link rel="icon" type="image/gif/png" href="{%static 'main/img/logo.png'%}">
         <title>savers</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Favicon -->
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="{%static 'main/img/favicon.png"> -->
-        
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+		<!-- icon -->
 		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<!-- font -->
+		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
 		<!-- all css here -->
         <link rel="stylesheet" href="{%static 'main/css/bootstrap.min.css'%}"> 
         <link rel="stylesheet" href="{%static 'main/css/font-awesome.min.css'%}">
@@ -25,15 +27,16 @@
         <link rel="stylesheet" href="{%static 'main/css/hambuergers.css'%}">
         <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
         <link rel="stylesheet" href="{%static 'main/css/responsive.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/shortcode/shortcodes.css'%}">
+		<link rel="stylesheet" href="{%static 'main/css/shortcode/shortcodes.css'%}">
     </head>
     		<!-- header start -->
-		<header>
+		<header style="background-color: white; ">
 			<div class="header-area header-sticky">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 col-xs-12">
 							<div class="logo">
+								<!-- nav_logo -->
 								<a href="{%url 'main'%}">SAVERS</a>
 							</div>
 						</div>
@@ -41,24 +44,26 @@
 							<div class="main-menu text-right">
 								<nav>
 									<ul class="menu">
+										<!-- nav_home -->
 										<li><a href="{%url 'main'%}">HOME</a>
 										</li>
-										<!-- <li><a href="#">ABOUT US</a></li>
-										<li><a href="#">Portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<ul>
-												<li><a href="#">Portfolio</a></li>
-												<li><a href="#">Portfolio details</a></li>
-											</ul>
-										</li> -->
+										<!-- nav_board -->
 										<li><a href="{%url 'board'%}">board</a>
-										    <!-- <ul>
-												<li><a href="#">blog</a></li>
-												<li><a href="#">blog post details</a></li>
-											</ul> -->
+										    <ul>
+												<!-- nav_board_notice -->
+												<li><a href="#">notice</a></li>
+												<!-- nav_board_q&a -->
+												<li><a href="#">Q&A</a></li>
+											</ul>
 										</li>
+										<!-- nav_product -->
 										<li><a href="{%url 'product'%}">product</a></li>
+										<!-- nav_mypage -->
 										<li><a href="{%url 'mypage'%}">mypage</a></li>
+										<!-- nav_login 로그인이 안되어있을때 -->
 										<li><a href="{%url 'login'%}">login</a></li>
+										<!-- nav_logout 로그인이 되어있을때 -->
+										<li><a href="#">logout</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -69,9 +74,9 @@
 			</div>
 		</header>
 		<!-- header end -->
-    <body>
+	<body style="background-color: #f4ede5; ">
+		<!-- 모든 html이 뜨는자리 -->
        {%block content%}{%endblock%}
-        <!-- blog area end -->
 		<!-- footer start -->
 		<footer class="footer-bg gray-bg ptb-90">
 			<div class="footer-area">
@@ -93,11 +98,10 @@
 			</div>
 		</footer>
 		<!-- footer end -->
-        <!-- start scrollUp  -->
         <div id="toTop">
             <i class="fa fa-chevron-up"></i>
         </div>
-
+		<!-- js모음 -->
         <script src="{%static 'main/js/bootstrap.min.js' %}"></script>
         <script src="{%static 'main/js/headroom.min.js' %}"></script>
         <script src="{%static 'main/js/bootstrap.imagesloaded.pkgd.min.js' %}"></script>
@@ -110,7 +114,7 @@
         <script src="{%static 'main/js/owl.carousel.min.js' %}"></script>
         <script src="{%static 'main/js/plugins.js' %}"></script>
 
-
+		<!-- bootstrap js link -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

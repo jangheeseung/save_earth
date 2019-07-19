@@ -1,0 +1,50 @@
+/* board.html에 대한 css */
+h1{
+    text-align: center;
+    padding : 40px;
+}
+
+.table_container{
+    width : 80%;
+    margin-left : 150px;
+}
+
+.table_page{
+    margin-left : 48.5em;
+}
+.Write{
+    margin-left : 93em;
+}
+
+.first{
+    font-size : 15px;
+}
+
+/* write.html에 대한 css */
+.wtitle{
+    font-size: 18px;
+    margin-left: 120px;
+    /* padding-left: 90px; */
+}
+.etitle{
+    margin-left: 80px;
+}
+
+.rtitle{
+    font-size: 18px;
+    margin-left: 120px;
+}
+.write_container{
+    margin:auto;
+    width : 70%;
+}
+
+.submit{
+    margin-left: 65.6em;
+}
+
+.content_group{
+    display: grid;
+    grid-template-columns: 260px 800px;
+    grid-template-rows: 50px 50px;
+}

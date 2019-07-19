@@ -19,6 +19,20 @@
 }
 
 .container_mypage{
-    width: 1350px;
+    margin: auto;
+}
+.mypage{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.mypage_text{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container_mypage2{
+    width: 80em;
     margin: auto;
 }

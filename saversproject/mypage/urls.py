@@ -6,5 +6,6 @@ from . import views
 
 urlpatterns = [
     path('',views.mypage,name="mypage"),
+    path('detail/',views.mypage,name="detail"),
 ]
 

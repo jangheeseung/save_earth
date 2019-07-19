@@ -28,15 +28,15 @@ NOTE: This is Header style file. All Header related style included in this file.
     position: relative;
 }
 .main-menu ul li a {
-    color: #464646;
+    color: black;
     font-family: "Lato", sans-serif;
-    font-size: 13px;
+    font-size: 13.2px;
     font-weight: 400;
     position: relative;
     text-transform: uppercase;
 }
 .main-menu ul li:hover > a {
-    color: #999
+    color: #5D8222
 }
 .main-menu ul li ul {
     background: #fff none repeat scroll 0 0;

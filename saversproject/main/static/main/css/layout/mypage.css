@@ -1,12 +1,8 @@
-.mypage .section-padding {
-    padding-top: 50px;
-    padding-bottom: 50px;
- }
-   
+/* ---------------------------------------------mypage.html-------------------------------------------------------- */
 @media (min-width: 992px) {
     .mypage .section-padding {
-    padding-top: 20px;
-    padding-bottom: 30px; } 
+    padding-top:2em;
+    padding-bottom: 2em; } 
 }
   
 @media (min-width: 1200px) {
@@ -19,6 +15,77 @@
 }
 
 .container_mypage{
-    width: 1350px;
     margin: auto;
+}
+.mypage{
+    width: 1200px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.mypage_text{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container_mypage2{
+    width: 80em;
+    margin: auto;
+}
+.delivery img{
+    width: 8em;
+    height: 8em;
+}
+.delivery{
+    margin-left: 5em;
+    display: flex; 
+    flex-direction: row;
+}
+.delivery_row { 
+    flex: 0 0 220px;
+ }
+
+.mypage_user{
+    margin-bottom: 3em;
+    display: flex; 
+    flex-direction: row;
+}
+
+.user_row>img{
+    width:6em;
+    height:6em;
+    margin-top: 1.5em;
+}
+.user_row{
+    flex: 0 0 110px;
+}
+.user_row:nth-child(2){
+    flex: 0 0 220px;
+    margin-top: 1.1em;
+}
+.user_row:nth-child(3){
+    flex: 0 0 30px;
+}
+.user_row:nth-child(4){
+    margin-top: 1.5em;
+    flex: 2 0 120px;
+}
+.user_row:nth-child(5){
+    flex: 1 0 220px;
+}
+.user_border{
+    border-left: 3px dashed black;
+    height: 10em;
+   
+}
+.user_row>h4{
+    margin-bottom: 1.5em;
+}
+
+h4>img{
+    width: 1.5em;
+    height: 1.5em;
+}
+.card-body>a{
+    float: right;
 }
