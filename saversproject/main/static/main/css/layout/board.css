@@ -1,12 +1,13 @@
 /* board.html에 대한 css */
 h1{
     text-align: center;
-    padding : 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .table_container{
     width : 80%;
-    margin-left : 150px;
+    margin:auto;
 }
 
 .table_page{
@@ -47,4 +48,31 @@ h1{
     display: grid;
     grid-template-columns: 260px 800px;
     grid-template-rows: 50px 50px;
+}
+
+#body {
+    background-color: #f4ede5;
+}
+
+@media (min-width: 992px) {
+    .board .section-padding {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .board {
+        margin: 30px;
+    }
+}
+
+.board {
+    width: 1500px;
+    margin: 2em auto;
+}
+
+section{
+    width: 95%;
+    margin: auto;
 }

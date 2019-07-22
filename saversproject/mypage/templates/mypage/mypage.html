@@ -28,6 +28,7 @@
                                                     <h4>tel:000-0000-0000</h4>
                                                 </div>
                                                 <div class="user_row">
+                                                    <!-- 가운대 점선 줄 -->
                                                     <div class="user_border"></div>
                                                 </div>
                                                 <div class="user_row">
@@ -62,7 +63,7 @@
                                                                         </table>
                                                                     </p>
                                                                     <!-- 주문목록 페이지로 넘어가는 버튼 -->
-                                                                    <a href="{%url 'detail'%}" class="btn btn-primary">자세히</a>
+                                                                    <a href="{%url 'mydetail'%}" class="btn btn-primary">자세히</a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -92,13 +93,33 @@
                                                                             </div>
                                                                         </div>
                                                                         <!-- 배송끝 -->
+                                                                        <!-- 기여도 그래프 -->
+                                                                        <div class="charts">
+                                                                            <h3>기여도 chart</h3>
+                                                                            <div class="charts">
+                                                                                <span>예시예시</span>
+                                                                                <div class="charts__chart chart--p100                chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                                <div class="charts__chart chart--p80  chart--blue    chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                                <div class="charts__chart chart--p60  chart--green   chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                                <div class="charts__chart chart--p40  chart--red     chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                                <div class="charts__chart chart--p20  chart--yellow  chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                                <div class="charts__chart chart--p5   chart--grey    chart--hover"></div>
+                                                                                <!-- /.charts__chart -->
+                                                                            </div>
+                                                                            <!-- /.charts -->
+
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </section>
-                                            </div>
-                                            <!-- mypage끝 -->
-                                        </body>
-                                        {%endblock%}
+                                                    </section>
+                                                </div>
+                                                <!-- mypage끝 -->
+                                            </body>
+                                            {%endblock%}

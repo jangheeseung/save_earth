@@ -4,5 +4,5 @@ from django.shortcuts import render
 def mypage(request):
         return render(request,'mypage/mypage.html')
 
-def detail(request):
-        return render(request,'mypage/detail.html')
+def mydetail(request):
+        return render(request,'mypage/mydetail.html')
