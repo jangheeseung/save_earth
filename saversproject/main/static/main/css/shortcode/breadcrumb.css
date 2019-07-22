@@ -1,0 +1,76 @@
+/*--------  Breadcrumb style default  -----------*/
+
+h2.page-title {
+    color: #464646;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.breadcrumbs li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+.breadcrumbs > ul li {
+    color: #464646;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.breadcrumbs > ul li a {
+    color: #464646;
+    padding-right: 17px;
+    position: relative;
+}
+.breadcrumbs > ul li a:hover {
+    color: #888888;
+}
+.breadcrumbs ul li a.active::after {
+    color: #888888;
+}
+.breadcrumbs ul li a::after {
+    background-color: #464646;
+    content: "";
+    font-size: 8px;
+    height: 15px;
+    margin-left: 11px;
+    position: absolute;
+    right: 7px;
+    top: 0;
+    transform: rotate(33deg);
+    width: 1.5px;
+}
+.ptrn-3 {
+    background: rgba(0, 0, 0, 0) url("../../img/pattern/3.jpg") repeat scroll 0 0;
+}
+.pattern-bread h2.page-title {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+}
+.pattern-bread .breadcrumbs > ul {
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+.border-bread {
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+}
+.bg-2.bread-bg {
+    background-attachment: fixed;
+    background-position: center center;
+}
+.breadcrumbs-img {} .breadcrumbs-img h2.page-title {
+    color: #f6f6f6;
+}
+.breadcrumbs-img .breadcrumbs > ul li a {
+    color: #f6f6f6;
+}
+.breadcrumbs-img .breadcrumbs > ul li {
+    color: #f6f6f6;
+}
+.breadcrumbs-img .breadcrumbs ul li a::after {
+    background-color: #f6f6f6;
+}
+.breadcrumbs-img

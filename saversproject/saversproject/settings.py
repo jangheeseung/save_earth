@@ -37,12 +37,27 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     
     'board.apps.BoardConfig',
     'login.apps.LoginConfig',
     'mypage.apps.MypageConfig',
     'pay.apps.PayConfig',
     'product.apps.ProductConfig',
+=======
+    #board apps 
+    'board.apps.BoardConfig',
+    #login apps
+    'login.apps.LoginConfig',
+    #mypage apps
+    'mypage.apps.MypageConfig',
+    #product apps
+    'product.apps.ProductConfig',
+    #pay apps
+    'pay.apps.PayConfig',
+    #main apps
+    'main.apps.MainConfig',
+>>>>>>> d0b4b02740d8cbb7c7ff0db556e1bfbf89ec8286
 ]
 
 MIDDLEWARE = [
@@ -81,6 +96,7 @@ WSGI_APPLICATION = 'saversproject.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.mysql',
@@ -93,6 +109,10 @@ DATABASES = {
             'read_default_file': os.path.join(BASE_DIR, 'mysql.cnf'),
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',
         }   
+=======
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+>>>>>>> d0b4b02740d8cbb7c7ff0db556e1bfbf89ec8286
     }
 }
 
@@ -134,3 +154,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'main','static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+>>>>>>> d0b4b02740d8cbb7c7ff0db556e1bfbf89ec8286

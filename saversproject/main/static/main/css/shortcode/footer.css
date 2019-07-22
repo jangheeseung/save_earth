@@ -1,0 +1,73 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Footer style file. All footer related style included in this file.
+
+--------------------------------------*/
+/*  .footer-bg{background:url(../../img/bg/footer.jpg)}  */
+
+.footer-border {
+    border-top: 1px solid #f6f6f6;
+}
+.footer-area {
+    position: relative;
+}
+.footer-info {
+    position: relative;
+}
+.footer-info {} .footer-info span {
+    color: #666;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.footer-info h5 {
+    color: #666;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.copyright {} .copyright p {
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.footer-info ul {} .footer-info ul li {
+    line-height: normal;
+    padding: 8px 0;
+}
+.footer-logo {
+    margin-bottom: 10px;
+}
+.social-icon {} .social-icon a {
+    border: 1px solid #464646;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    line-height: 27px;
+    margin: 0 5px;
+    text-align: center;
+    width: 30px;
+}
+.social-icon a:hover {
+    background: #464646;
+    color: #fff
+}
+.footer-4 .footer-logo {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+.footer-4 .social-icon {
+    float: right;
+    text-align: center;
+}
+.footer-4 .footer-logo > p {
+    margin-bottom: 0;
+}
+.logo.logo-style {
+    margin-top: 0;
+}
+.copyright > p {
+    margin-top: 2px;
+}

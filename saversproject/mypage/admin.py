@@ -1,4 +1,5 @@
 from django.contrib import admin
+<<<<<<< HEAD
 from .models import *
 
 class UserOrderAdmin(admin.ModelAdmin):
@@ -18,3 +19,7 @@ admin.site.register(UserOrder, UserOrderAdmin)
 admin.site.register(Basket, BasketAdmin)
 admin.site.register(Donation, DonationAdmin)
 admin.site.register(OrderStatus, OrderStatusAdmin)
+=======
+
+# Register your models here.
+>>>>>>> d0b4b02740d8cbb7c7ff0db556e1bfbf89ec8286
