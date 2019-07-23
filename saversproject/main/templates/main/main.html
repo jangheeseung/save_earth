@@ -1,78 +1,10 @@
+{%extends 'main/layout.html'%}
 {% load staticfiles %}
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>savers</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Favicon -->
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="{%static 'main/img/favicon.png"> -->
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-		<!-- all css here -->
-        <link rel="stylesheet" href="{%static 'main/css/bootstrap.min.css'%}"> 
-        <link rel="stylesheet" href="{%static 'main/css/font-awesome.min.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/et-line-fonts.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/animate.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/owl.carousel.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/magnific-popup.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/meanmenu.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/hambuergers.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/responsive.css'%}">
-        <link rel="stylesheet" href="{%static 'main/css/shortcode/shortcodes.css'%}">
-    </head>
-    <body>
+{%block content%}
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="{%static 'main/http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
-		<!-- header start -->
-		<header>
-			<div class="header-area header-sticky">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-xs-12">
-							<div class="logo">
-								<a href="{%url 'main'%}">SAVERS</a>
-							</div>
-						</div>
-						<div class="col-md-9 col-xs-12">
-							<div class="main-menu text-right">
-								<nav>
-									<ul class="menu">
-										<li><a href="{%url 'main'%}">HOME</a>
-										</li>
-										<!-- <li><a href="#">ABOUT US</a></li>
-										<li><a href="#">Portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-											<ul>
-												<li><a href="#">Portfolio</a></li>
-												<li><a href="#">Portfolio details</a></li>
-											</ul>
-										</li> -->
-										<li><a href="{%url 'board'%}">board</a>
-										    <!-- <ul>
-												<li><a href="#">blog</a></li>
-												<li><a href="#">blog post details</a></li>
-											</ul> -->
-										</li>
-										<li><a href="{%url 'product'%}">product</a></li>
-										<li><a href="{%url 'mypage'%}">mypage</a></li>
-										<li><a href="{%url 'login'%}">login</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="mobile-menu"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- header end -->
 		<div class="slider-area slider-style-1">
             <div class="slider-active">
                 <div class="single-slider" style="background-image: url(img/slider/5.jpg);">
@@ -98,35 +30,7 @@
                 </div>                    -->
             </div>
         </div>
-        <div class="history-area ptb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="history-text">
-                            <h2>our history</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat. Duis aute irure dol in reprehenderit in voluptate velit sed do eiusmod tempor incididunt</p>
-                            <a href="#">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="lead">designing</div>
-                                <div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>95%</span></div>
-                            </div>
-                            <div class="progress">
-                                <div class="lead">branding</div>
-                                <div class="progress-bar wow fadeInLeft" data-progress="90%" style="width: 90%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>90%</span> </div>
-                            </div>					
-                            <div class="progress an-rs">
-                                <div class="lead">developing</div>
-                                <div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>95%</span> </div>
-                            </div>												
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="count-area count-bg pt-120 pb-90 overly-style">
 		    <div class="container">
 		        <div class="row">
@@ -157,245 +61,211 @@
 		        </div>
 		    </div>
 		</div>
-		<!-- portfolio start -->
-		<div class="portfolio-area ptb-90">
-			<div class="container">
-                <div class="section-title text-center">
-                    <h2>our works</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                </div>
-				<div class="portfolio-menu portfolio-left-menu text-center mb-50">
-					<button class="active" data-filter="*">ALL</button>
-					<button data-filter=".cat1">Graphic </button>
-					<button data-filter=".cat2">Web Design</button>
-					<button data-filter=".cat3">Branding </button>
-				</div>			
-				<div class="row portfolio-style-2">
-					<div class="grid">
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/1.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>									
-							</div>
-						</div>					
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2 cat3">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/2.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>								
-							</div>						
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/3.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>								
+		<div class="history-area ptb-90">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="history-text">
+								<h2>기부현항</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. U enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod consequat. Duis aute irure dol in reprehenderit in voluptate velit sed do eiusmod tempor incididunt</p>
+								<a href="#">read more</a>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/4.jpg" alt="" />
+						<div class="col-md-6">
+							<div class="skill">
+								<div class="progress">
+									<div class="lead">designing</div>
+									<div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> <span>95%</span></div>
 								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>								
+								<div class="progress">
+									<div class="lead">branding</div>
+									<div class="progress-bar wow fadeInLeft" data-progress="90%" style="width: 90%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>90%</span> </div>
+								</div>					
+								<div class="progress an-rs">
+									<div class="lead">developing</div>
+									<div class="progress-bar wow fadeInLeft" data-progress="95%" style="width: 95%;" data-wow-duration="1.5s" data-wow-delay="1.2s"><span>95%</span> </div>
+								</div>												
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/5.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>							
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat3">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/6.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>							
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2 cat3">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/7.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>							
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat3">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/8.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>								
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
-							<div class="portfolio hover-style">
-								<div class="portfolio-img">
-									<img src="img/portfolio/9.jpg" alt="" />
-								</div>
-								<div class="portfolio-title text-center">
-									<h3><a href="#">TITLE GOES HERE</a></h3>
-									<span>Development</span>
-								</div>								
-							</div>
-						</div>
-					</div>		
-				</div>
-				<div class="view-more text-center">
-					<a href="#">view more</a>
-				</div>
-			</div>
-		</div>	
-		<!-- portfolio start -->
-		<div class="brand-logo-area count-bg ptb-120 overly-style">
-		    <div class="container">
-		        <div class="row">
-		            <div class="brand-logo-active">
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/2.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/3.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/4.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/2.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/3.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="single-brand text-center">
-                                <a href="#">
-                                    <img src="img/brand-logo/1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-		<!-- service-area start -->
-		<div class="service-area gray-bg border-top pt-85 pb-60">
-			<div class="container">
-				<div class="section-title text-center">
-                    <h2>Our Services</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                </div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center">
-							<i class="icon-laptop"></i>
-							<h3>Web Design</h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center">
-							<i class="icon-pencil"></i>
-							<h3>Development </h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center">
-							<i class="icon-camera"></i>
-							<h3>Photography</h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center">
-							<i class="icon-linegraph "></i>
-							<h3>Branding</h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center">
-							<i class="icon-gears "></i>
-							<h3>Support</h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-service white-bg text-center xs-service">
-							<i class="icon-briefcase "></i>
-							<h3>Marketing</h3>
-							<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+	
+			<!-- service-area start -->
+			<div class="service-area gray-bg border-top pt-85 pb-60">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>Our Services</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center">
+								<i class="icon-laptop"></i>
+								<h3>Web Design</h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center">
+								<i class="icon-pencil"></i>
+								<h3>Development </h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center">
+								<i class="icon-camera"></i>
+								<h3>Photography</h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center">
+								<i class="icon-linegraph "></i>
+								<h3>Branding</h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center">
+								<i class="icon-gears "></i>
+								<h3>Support</h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service white-bg text-center xs-service">
+								<i class="icon-briefcase "></i>
+								<h3>Marketing</h3>
+								<p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- portfolio start -->
+			<div class="portfolio-area ptb-90">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>our works</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+					<div class="portfolio-menu portfolio-left-menu text-center mb-50">
+						<button class="active" data-filter="*">ALL</button>
+						<button data-filter=".cat1">Graphic </button>
+						<button data-filter=".cat2">Web Design</button>
+						<button data-filter=".cat3">Branding </button>
+					</div>			
+					<div class="row portfolio-style-2">
+						<div class="grid">
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/1.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>									
+								</div>
+							</div>					
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2 cat3">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/2.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>								
+								</div>						
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/3.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>								
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/4.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>								
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/5.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>							
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat3">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/6.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>							
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat2 cat3">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/7.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>							
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat3">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/8.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>								
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12 grid-item cat1">
+								<div class="portfolio hover-style">
+									<div class="portfolio-img">
+										<img src="img/portfolio/9.jpg" alt="" />
+									</div>
+									<div class="portfolio-title text-center">
+										<h3><a href="#">TITLE GOES HERE</a></h3>
+										<span>Development</span>
+									</div>								
+								</div>
+							</div>
+						</div>		
+					</div>
+					<div class="view-more text-center">
+						<a href="#">view more</a>
+					</div>
+				</div>
+			</div>	
+	
 		<!-- service-area end -->
 		<div class="team-area pt-85 pb-60">
 			<div class="container">
@@ -507,54 +377,5 @@
                     </div>
                 </div>	
             </div>
-        </div>
-        <!-- blog area end -->
-		<!-- footer start -->
-		<footer class="footer-bg gray-bg ptb-90">
-			<div class="footer-area">
-				<div class="container">
-					<div class="footer-info text-center">
-						<div class="logo logo-style">
-							<a href="#">MIAMI</a>
-						</div>
-						<ul>
-							<li>Phone : +889 945 432</li>
-							<li>Email : devitems@gmail.com</li>
-							<li>Address : 123 West Street,Melbourne Victoria</li>
-						</ul>
-						<div class="social-icon mt-20">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-skype"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- footer end -->
-        <!-- start scrollUp  -->
-        <div id="toTop">
-            <i class="fa fa-chevron-up"></i>
-        </div>
-
-        <script src="{%static 'main/js/bootstrap.min.js' %}"></script>
-        <script src="{%static 'main/js/headroom.min.js' %}"></script>
-        <script src="{%static 'main/js/bootstrap.imagesloaded.pkgd.min.js' %}"></script>
-        <script src="{%static 'main/js/jquery-1.12.0.min.js' %}"></script>
-        <script src="{%static 'main/js/jquery.apper.js' %}"></script>
-        <script src="{%static 'main/js/jquery.knob.js' %}"></script>
-        <script src="{%static 'main/js/meanmenu.js' %}"></script>
-        <script src="{%static 'main/js/main.js' %}"></script>
-        <script src="{%static 'main/js/modernizr-2.8.3.min.js' %}"></script>
-        <script src="{%static 'main/js/owl.carousel.min.js' %}"></script>
-        <script src="{%static 'main/js/plugins.js' %}"></script>
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    </body>
-</html>
+		</div>
+{%endblock%}

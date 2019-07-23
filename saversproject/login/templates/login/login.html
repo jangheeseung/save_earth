@@ -1,2 +1,66 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <!-- google_button을 따올려고 쓴것 -->
+    <meta
+        name="google-signin-client_id"
+        content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 
-<h1>Login page</h1>
+        <!-- login시작 -->
+        <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">
+            <div class="container_login">
+                <h2 class="login_text">Login</h2>
+                <form>
+                    <div class="form-group">
+                        <!-- user_id -->
+                        <label for="login_id" placeholder="Input id">ID</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="login_id"
+                            aria-describedby="emailHelp"></div>
+                        <div class="form-group">
+                            <!-- user_password -->
+                            <label for="login_ps" placeholder="Input password">Password</label>
+                            <input type="password" class="form-control" id="login_ps"></div>
+                            <!-- login_button -->
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <!-- siginup_button -->
+                            <a href="{% url 'signup'%}" class="btn btn-primary btn-block">Signup</a>
+                        </form>
+                        <!-- google_button -->
+                        <div id="my-signin2"></div>
+                        <script>
+                            // 성공했을때
+                            function onSuccess(googleUser) {
+                                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                            }
+                            // 실패했을때
+                            function onFailure(error) {
+                                console.log(error);
+                            }
+                            function renderButton() {
+                                // 버튼크기랑 버튼처리
+                                gapi
+                                    .signin2
+                                    .render('my-signin2', {
+                                        'scope': 'profile email',
+                                        'width': 400,
+                                        'height': 35,
+                                        'longtitle': true,
+                                        'theme': 'dark',
+                                        'onsuccess': onSuccess,
+                                        'onfailure': onFailure
+                                    });
+                            }
+                        </script>
+
+                        <script
+                            src="https://apis.google.com/js/platform.js?onload=renderButton"
+                            async="async"
+                            defer="defer"></script>
+                        <!-- google_button 끝 -->
+                    </div>
+                    <!-- login끝 -->
+
+                    {%endblock%}

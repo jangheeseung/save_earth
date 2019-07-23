@@ -1,0 +1,38 @@
+.mypage .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+   
+@media (min-width: 992px) {
+    .mypage .section-padding {
+    padding-top: 20px;
+    padding-bottom: 30px; } 
+}
+  
+@media (min-width: 1200px) {
+    .mypage {
+    margin: 30px; } 
+}
+ 
+#body {
+    background-color: #f4ede5; 
+}
+
+.container_mypage{
+    margin: auto;
+}
+.mypage{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.mypage_text{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container_mypage2{
+    width: 80em;
+    margin: auto;
+}

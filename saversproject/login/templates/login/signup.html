@@ -1,0 +1,55 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <!-- 이름,주소,전화번호,이메일,비밀번호 -->
+
+    <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">  
+      <!-- Signup 시작 -->
+        <div class="container_login">
+            <h2 class="login_text">Signup</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+                        <label for="siginup_name">Name</label>
+                        <!-- user_name -->
+                        <input type="text" class="form-control" id="siginup_name" placeholder="name"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup_id" placeholder="Input id">ID</label>
+                        <!-- user_id -->
+                        <input type="text" class="form-control" id="signup_id" placeholder="id"></div>
+                        <div class="form-group">
+                            <label for="signup_ps1">Password</label>
+                            <!-- user_password -->
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="signup_ps1"
+                                placeholder="password"></div>
+                            <div class="form-group">
+                                <label for="signup_ps2">Password</label>
+                                 <!-- user_password one more-->
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="signup_ps2"
+                                    placeholder="one more password"></div>
+                                <div class="form-group">
+                                    <label for="siginup_address">Address</label>
+                                    <!-- user_address -->
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="siginup_address"
+                                        placeholder="address"></div>
+                                    <div class="form-group">
+                                        <label for="signup_tell" placeholder="Input id">Tel</label>
+                                        <!-- user_tel -->
+                                        <input type="text" class="form-control" id="signup_id" placeholder="tel"></div>
+                                        <!-- signup_button -->
+                                        <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                                    </form>
+                                </div>
+                                <!-- Signup 끝 -->
+
+                                {%endblock%}
