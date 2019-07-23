@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
@@ -26,8 +25,3 @@ class User(models.Model):
     class Meta:
         managed = False
         db_table = 'user'
-=======
-from django.db import models
-
-# Create your models here.
->>>>>>> d0b4b02740d8cbb7c7ff0db556e1bfbf89ec8286
