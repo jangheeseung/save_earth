@@ -11,10 +11,10 @@
         margin: 30px;
     }
 }
-
+/* 
 #body {
     background-color: #f4ede5;
-}
+} */
 
 .container_mypage {
     margin: auto;
@@ -136,4 +136,13 @@ h4 > img {
 }
 .charts--grouped [data-percent]::after {
     display: none;
+}
+/* -------------------------------------------------------mydetail------------------------------------------------------------------ */
+td>img{
+    width: 12em;
+    height: 12em;
+}
+.mydetail_h2{
+    margin-top: 0.5em;
+    margin-bottom:1em; 
 }

@@ -3,123 +3,124 @@
 {%block content%}
 
     <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
-        <body id="body">
-            <!-- mypage 시작-->
-            <div class="mypage">
-                <section id="gtco-welcome" class="bg-white section-padding">
-                    <div class="container_mypage">
-                        <div class="section-content">
-                            <div class="row">
-                                <div class="pl-lg-5 ml-md-5">
-                                    <div class="container_mypage2">
-                                        <h2 class="mypage_text">
-                                            Mypage
-                                        </h2>
-                                        <!-- 개인정보 시작 -->
-                                        <div class="mypage_user">
+        <!-- <body id="body"> -->
+        <!-- mypage 시작-->
+        <div class="mypage">
+            <section id="gtco-welcome" class="bg-white section-padding">
+                <div class="container_mypage">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="pl-lg-5 ml-md-5">
+                                <div class="container_mypage2">
+                                    <h2 class="mypage_text">
+                                        Mypage
+                                    </h2>
+                                    <!-- 개인정보 시작 -->
+                                    <div class="mypage_user">
+                                        <div class="user_row">
+                                            <img src="{%static 'main/img/user.png'%}"></div>
                                             <div class="user_row">
-                                                <img src="{%static 'main/img/user.png'%}"></div>
-                                                <div class="user_row">
-                                                    <!-- user_name -->
-                                                    <h4>안녕하세요 ㅁㅁㅁ님</h4>
-                                                    <!-- user_email -->
-                                                    <h4>email:ㅁㅁㅁㅁ@ㅁㅁㅁ</h4>
-                                                    <!-- user tel -->
-                                                    <h4>tel:000-0000-0000</h4>
+                                                <!-- user_name -->
+                                                <h4>안녕하세요 ㅁㅁㅁ님</h4>
+                                                <!-- user_email -->
+                                                <h4>email:ㅁㅁㅁㅁ@ㅁㅁㅁ</h4>
+                                                <!-- user tel -->
+                                                <h4>tel:000-0000-0000</h4>
+                                            </div>
+                                            <div class="user_row">
+                                                <!-- 가운대 점선 줄 -->
+                                                <div class="user_border"></div>
+                                            </div>
+                                            <div class="user_row">
+                                                <!-- user_coin -->
+                                                <h4>남은 coin:ㅁㅁ
+                                                    <!-- <img src="{%static 'main/img/coin.png'%}"> -->
+                                                </h4>
+                                                <br>
+                                                    <!-- user_pay(월정액) -->
+                                                    <h4>내가 사용하는 월정액:ㅁㅁㅁ</h4>
                                                 </div>
                                                 <div class="user_row">
-                                                    <!-- 가운대 점선 줄 -->
-                                                    <div class="user_border"></div>
-                                                </div>
-                                                <div class="user_row">
-                                                    <!-- user_coin -->
-                                                    <h4>남은 coin:ㅁㅁ
-                                                        <img src="{%static 'main/img/coin.png'%}"></h4>
-                                                        <br>
-                                                            <!-- user_pay(월정액) -->
-                                                            <h4>내가 사용하는 월정액:ㅁㅁㅁ</h4>
-                                                        </div>
-                                                        <div class="user_row">
-                                                            <div class="card" style="width: 38rem; height: 18rem;">
-                                                                <div class="card-body">
-                                                                    <!-- 주문목록 간단히 -->
-                                                                    <h4 class="card-title">주문목록</h4>
-                                                                    <p class="card-text">
-                                                                        <table class="table">
-                                                                            <thead>
-                                                                                <tr>
-                                                                                    <th scope="col">물품</th>
-                                                                                    <th scope="col">갯수</th>
-                                                                                    <th scope="col">날짜</th>
-                                                                                </tr>
-                                                                            </thead>
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>빨대</td>
-                                                                                    <td>3</td>
-                                                                                    <td>09.02</td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </p>
-                                                                    <!-- 주문목록 페이지로 넘어가는 버튼 -->
-                                                                    <a href="{%url 'mydetail'%}" class="btn btn-primary">자세히</a>
-                                                                </div>
-                                                            </div>
+                                                    <div class="card" style="width: 38rem; height: 18rem;">
+                                                        <div class="card-body">
+                                                            <!-- 주문목록 간단히 -->
+                                                            <h4 class="card-title">주문목록</h4>
+                                                            <p class="card-text">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">물품</th>
+                                                                            <th scope="col">갯수</th>
+                                                                            <th scope="col">날짜</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>빨대</td>
+                                                                            <td>3</td>
+                                                                            <td>09.02</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </p>
+                                                            <!-- 주문목록 페이지로 넘어가는 버튼 -->
+                                                            <a href="{%url 'mydetail'%}" class="btn btn-primary">자세히</a>
                                                         </div>
                                                     </div>
-                                                    <!-- 주문목록 끝 -->
-                                                    <!-- 개인정보 끝 -->
-                                                    <!-- 배송 -->
-                                                    <h3>배송현황</h3>
-                                                    <div class="jumbotron jumbotron-fluid">
-                                                        <div class="delivery">
+                                                </div>
+                                            </div>
+                                            <!-- 주문목록 끝 -->
+                                            <!-- 개인정보 끝 -->
+                                            <!-- 배송 -->
+                                            <h3>배송현황</h3>
+                                            <div class="jumbotron jumbotron-fluid">
+                                                <div class="delivery">
+                                                    <div class="delivery_row">
+                                                        <img src="{%static 'main/img/gift.png'%}">
+                                                            <p>배송준비중</p>
+                                                        </div>
+                                                        <div class="delivery_row">
+                                                            <img src="{%static 'main/img/arrow.png'%}"></div>
                                                             <div class="delivery_row">
-                                                                <img src="{%static 'main/img/gift.png'%}">
-                                                                    <p>배송준비중</p>
+                                                                <img src="{%static 'main/img/delivery-truck.png'%}">
+                                                                    <p>배송중</p>
                                                                 </div>
                                                                 <div class="delivery_row">
                                                                     <img src="{%static 'main/img/arrow.png'%}"></div>
                                                                     <div class="delivery_row">
-                                                                        <img src="{%static 'main/img/delivery-truck.png'%}">
-                                                                            <p>배송중</p>
-                                                                        </div>
-                                                                        <div class="delivery_row">
-                                                                            <img src="{%static 'main/img/arrow.png'%}"></div>
-                                                                            <div class="delivery_row">
-                                                                                <img src="{%static 'main/img/box.png'%}">
-                                                                                    <p>배송완료</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!-- 배송끝 -->
-                                                                        <!-- 기여도 그래프 -->
-                                                                        <div class="charts">
-                                                                            <h3>기여도 chart</h3>
-                                                                            <div class="charts">
-                                                                                <span>예시예시</span>
-                                                                                <div class="charts__chart chart--p100                chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                                <div class="charts__chart chart--p80  chart--blue    chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                                <div class="charts__chart chart--p60  chart--green   chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                                <div class="charts__chart chart--p40  chart--red     chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                                <div class="charts__chart chart--p20  chart--yellow  chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                                <div class="charts__chart chart--p5   chart--grey    chart--hover"></div>
-                                                                                <!-- /.charts__chart -->
-                                                                            </div>
-                                                                            <!-- /.charts -->
-
+                                                                        <img src="{%static 'main/img/box.png'%}">
+                                                                            <p>배송완료</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <!-- 배송끝 -->
+                                                                <!-- 기여도 그래프 -->
+                                                                <div class="charts">
+                                                                    <h3>기여도 chart</h3>
+                                                                    <div class="charts">
+                                                                        <span>예시예시</span>
+                                                                        <div class="charts__chart chart--p100                chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                        <div class="charts__chart chart--p80  chart--blue    chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                        <div class="charts__chart chart--p60  chart--green   chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                        <div class="charts__chart chart--p40  chart--red     chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                        <div class="charts__chart chart--p20  chart--yellow  chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                        <div class="charts__chart chart--p5   chart--grey    chart--hover"></div>
+                                                                        <!-- /.charts__chart -->
+                                                                    </div>
+                                                                    <!-- /.charts -->
+
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </section>
+                                                    </div>
                                                 </div>
-                                                <!-- mypage끝 -->
-                                            </body>
-                                            {%endblock%}
+                                            </section>
+                                        </div>
+                                        <!-- mypage끝 -->
+                                        <!-- </body> -->
+                                        {%endblock%}
