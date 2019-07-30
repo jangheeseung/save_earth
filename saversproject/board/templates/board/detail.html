@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="{%static 'main/css/layout/board.css'%}">
         <section id="gtco-welcome" class="bg-white section-padding">
             <div class="board">
-                <!-- Q&A 또는 공지사항이나오게 -->
                 <h1>Question</h1>
                 <!-- board_title쓰는 칸 -->
                 <!-- title -->
@@ -45,18 +44,25 @@
                                         rows="15"
                                         cols="40"></textarea>
                                     <br>
-                                        <br>
-                                            <div class="submit">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <a href="{%url 'board'%}" class="btn btn-primary">Back</a>
+                                        <br></div>
+                                    </div>
+                                    <h2>Answer</h2>
+                                    <div class="answer">
+                                        <div class="form-group">
+                                            <textarea
+                                                class="form-control"
+                                                id="exampleFormControlTextarea1"
+                                                rows="15"
+                                                cols="20"></textarea>
+                                            <br>
+                                                <br></div>
                                             </div>
+                                            
+                                        </form>
+                                        <div class="back">
+                                            <a href="{%url 'board'%}" class="btn btn-primary">Back</a>
                                         </div>
                                     </div>
-                                    <!-- 제출버튼, 뒤로가기버튼 -->
-
-                                </form>
-                            </div>
-                        </div>
-                    </section>
-
-                    {%endblock%}
+                                </div>
+                            </section>
+                            {%endblock%}

@@ -2,7 +2,6 @@
 h1{
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .table_container{
@@ -38,21 +37,19 @@ h1{
 .write_container{
     margin:auto;
     width : 70%;
+    margin-bottom: 28em;
 }
 
 .submit{
     margin-left: 65.6em;
 }
 
-.content_group{
+/* .content_group{
     display: grid;
     grid-template-columns: 260px 800px;
     grid-template-rows: 50px 50px;
-}
+} */
 
-#body {
-    background-color: #f4ede5;
-}
 
 @media (min-width: 992px) {
     .board .section-padding {
@@ -76,3 +73,15 @@ section{
     width: 95%;
     margin: auto;
 }
+
+/* detail.html에 대한 css */
+h2{
+    text-align: center;
+    padding-top: 12em;
+}
+
+.answer{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+

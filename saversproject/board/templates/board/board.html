@@ -2,7 +2,6 @@
 {%load staticfiles%}
 {%block content%}
     <link rel="stylesheet" href="{%static 'main/css/layout/board.css'%}">
-        <body id="body">
             <section id="gtco-welcome" class="bg-white section-padding">
                 <div class="board">
                     <h1>공지사항 / Q & A</h1>
@@ -33,7 +32,7 @@
                                         <tr>
 
                                             <th scope="row" width="12%">NOTICE</th>
-                                            <td>Save earth</td>
+                                            <td><a href="{%url 'detail'%}">Save earth</td>
                                             <td>hye ji</td>
                                             <td>2019.07.16</td>
                                             <td>20</td>
@@ -87,5 +86,4 @@
                         </div>
                     </div>
                 </section>
-            </body>
             {%endblock%}
