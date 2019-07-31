@@ -52,3 +52,45 @@ button{
     width: 38em;
     height: 48em;
 }
+
+.login_button{
+    border: 1px solid #5d8222;
+    color: #5d8222;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    padding: 6px 30px 8px;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+    width: 28.5em;
+    text-align:center;
+}
+
+.login_button:hover {
+    border: 1px solid #5d8222;
+    color: #fff;
+    background-color: #5d8222;
+}
+
+.google_button{
+    border: 1px solid #4285F4;
+    color: #4285F4;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 35px;
+    padding: 6px 30px 8px;
+    text-transform: capitalize;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+    width: 28.5em;
+    text-align:center;
+}
+
+.google_button:hover {
+    border: 1px solid #4285F4;
+    color: #fff;
+    background-color: #4285F4;
+}

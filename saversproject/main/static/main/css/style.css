@@ -471,7 +471,7 @@ h3.main-contact {
 }
 
 .pricing-entry {
-    border: 1px solid #f9d0d1;
+    border: 1px solid #5D8222;
     position: relative;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -494,7 +494,7 @@ h3.main-contact {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #f18c8e;
+    color: #5D8222;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -553,12 +553,7 @@ h3.main-contact {
     margin-top: -10px;
     border: 1px solid #563b4c;
 }
-.pricing-entry:focus .btn,
-.pricing-entry:hover .btn {
-    background: #563b4c !important;
-    border: 1px solid #563b4c !important;
-    color: #fff !important;
-}
+
 .pricing-entry:focus .price,
 .pricing-entry:hover .price {
     color: #563b4c;
@@ -566,9 +561,4 @@ h3.main-contact {
 .pricing-entry:focus h3,
 .pricing-entry:hover h3 {
     color: #563b4c;
-}
-.btn.btn-primary {
-    background: #f18c8e !important;
-    border: 1px solid #f18c8e !important;
-    color: #fff !important;
 }
