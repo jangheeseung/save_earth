@@ -21,27 +21,21 @@ h1{
 }
 
 /* write.html에 대한 css */
-.wtitle{
-    font-size: 18px;
-    margin-left: 120px;
-    /* padding-left: 90px; */
-}
-.etitle{
-    margin-left: 80px;
+.write_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin:auto;
+    width : 70%;
+    margin-bottom: 28em; */
 }
 
-.rtitle{
-    font-size: 18px;
-    margin-left: 120px;
-}
-.write_container{
-    margin:auto;
-    width : 70%;
-    margin-bottom: 28em;
-}
 
 .submit{
     margin-left: 65.6em;
+    margin-bottom: 2em;
 }
 
 /* .content_group{
@@ -84,4 +78,3 @@ h2{
     margin-top: 50px;
     margin-left: 50px;
 }
-

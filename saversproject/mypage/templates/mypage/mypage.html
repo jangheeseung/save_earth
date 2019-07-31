@@ -2,8 +2,7 @@
 {%load staticfiles%}
 {%block content%}
 
-    <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
-        <!-- <body id="body"> -->
+    <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">d        
         <!-- mypage 시작-->
         <div class="mypage">
             <section id="gtco-welcome" class="bg-white section-padding">
@@ -64,6 +63,7 @@
                                                                 </table>
                                                             </p>
                                                             <!-- 주문목록 페이지로 넘어가는 버튼 -->
+                                                            <a href="{%url 'mydetail'%}" class="btn btn-primary">장바구니</a>
                                                             <a href="{%url 'mydetail'%}" class="btn btn-primary">자세히</a>
                                                         </div>
                                                     </div>
@@ -122,5 +122,4 @@
                                             </section>
                                         </div>
                                         <!-- mypage끝 -->
-                                        <!-- </body> -->
                                         {%endblock%}

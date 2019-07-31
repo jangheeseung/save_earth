@@ -28,7 +28,6 @@
     
 -----------------------------------------------------------------------------------*/
 
-
 /*--------- 10. About us -------------*/
 
 .bg-img {
@@ -41,10 +40,12 @@
 .single-count {
     text-align: center;
 }
-.count-icon {} .count-icon span {
+.count-icon {}
+.count-icon span {
     font-size: 35px;
 }
-.count-title {} .count-title h2 {
+.count-title {}
+.count-title h2 {
     color: #464646;
     font-size: 40px;
     font-weight: 300;
@@ -56,7 +57,10 @@
     margin: 0;
     text-transform: capitalize;
 }
-. {} . {} . {} .hover-style {
+. {}
+. {}
+. {}
+.hover-style {
     display: block;
     position: relative;
 }
@@ -128,7 +132,7 @@
     padding: 6px 30px 8px;
     text-transform: capitalize;
     background-color: transparent;
-    transition: all .3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .history-text > a:hover {
     border: 1px solid #333;
@@ -144,10 +148,14 @@
     margin: 14px 0 20px;
     text-transform: uppercase;
 }
-.about-minimal {} .about-minimal h2 {} .minimal-img > img {
+.about-minimal {}
+.about-minimal h2 {}
+.minimal-img > img {
     width: 100%;
 }
-.about-minimal {} .about-minimal ul {} .about-minimal ul li {
+.about-minimal {}
+.about-minimal ul {}
+.about-minimal ul li {
     border-top: 1px solid #f6f6f6;
     display: block;
     line-height: 1.3em;
@@ -183,7 +191,7 @@
 .about-minimal a:hover {
     background: #464646;
     color: #fff;
-    border-color: #464646
+    border-color: #464646;
 }
 .single-skill-about {
     text-align: center;
@@ -250,12 +258,12 @@
 }
 .team-icon > a:hover {
     background: #fff;
-    color: #666
+    color: #666;
 }
 .team-wrapper:hover .team-icon > a {
     opacity: 1;
     visibility: visible;
-    margin: 0 5px
+    margin: 0 5px;
 }
 .team-info h3 {
     font-size: 20px;
@@ -336,7 +344,7 @@
     text-transform: capitalize;
 }
 .pricing-tex li:last-child {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 .pricing-tex li i {
     padding-right: 10px;
@@ -364,7 +372,6 @@
     font-size: 14px;
     padding-left: 12px;
 }
-
 
 /*--------- 12. Contact us ----------*/
 
@@ -461,4 +468,107 @@ h3.main-contact {
 }
 .conract-area-bottom {
     margin-top: 50px;
+}
+
+.pricing-entry {
+    border: 1px solid #f9d0d1;
+    position: relative;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+@media (max-width: 767.98px) {
+    .pricing-entry {
+        margin-bottom: 4em;
+    }
+}
+.pricing-entry > div {
+    padding: 20px;
+}
+.pricing-entry > div p {
+    margin-bottom: 0;
+}
+.pricing-entry h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f18c8e;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.pricing-entry p .price {
+    font-weight: 900;
+    font-size: 28px;
+    color: #563b4c;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.pricing-entry p .per {
+    font-size: 12px;
+}
+.pricing-entry ul {
+    margin: 0;
+    padding: 0;
+}
+.pricing-entry ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+.pricing-entry ul li:nth-child(odd) {
+    background: #fafafa;
+}
+.pricing-entry .button {
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.pricing-entry .button .btn {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.pricing-entry:focus,
+.pricing-entry:hover {
+    margin-top: -10px;
+    border: 1px solid #563b4c;
+}
+.pricing-entry:focus .btn,
+.pricing-entry:hover .btn {
+    background: #563b4c !important;
+    border: 1px solid #563b4c !important;
+    color: #fff !important;
+}
+.pricing-entry:focus .price,
+.pricing-entry:hover .price {
+    color: #563b4c;
+}
+.pricing-entry:focus h3,
+.pricing-entry:hover h3 {
+    color: #563b4c;
+}
+.btn.btn-primary {
+    background: #f18c8e !important;
+    border: 1px solid #f18c8e !important;
+    color: #fff !important;
 }
