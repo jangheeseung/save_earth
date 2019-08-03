@@ -6,3 +6,6 @@ def mypage(request):
 
 def mydetail(request):
         return render(request,'mypage/mydetail.html')
+
+def basket(request):
+        return render(request,'mypage/basket.html')

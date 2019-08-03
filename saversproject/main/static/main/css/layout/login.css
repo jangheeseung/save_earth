@@ -32,6 +32,7 @@ button{
     margin:auto;
     width: 38em;
     height: 32em;
+    
 }
 
 @media (min-width: 992px) {

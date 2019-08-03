@@ -522,9 +522,25 @@ h3.main-contact {
     list-style: none;
     padding: 10px 20px;
 }
+
+.pricing-entry ul li:hover {
+    background-color:#5C8C14;
+    color:white;
+    transition: 0.5s;
+   
+}
+
 .pricing-entry ul li:nth-child(odd) {
     background: #fafafa;
 }
+
+.pricing-entry ul li:nth-child(odd):hover {
+    background-color: #5C8C14;
+    color:white;
+    transition: 0.5s; 
+    display: block;
+}
+
 .pricing-entry .button {
     position: absolute;
     bottom: -26px;
