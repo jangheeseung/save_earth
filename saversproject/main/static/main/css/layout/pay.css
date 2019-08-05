@@ -1,0 +1,12 @@
+@media (min-width: 992px) {
+    .pay .section-padding {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pay {
+        margin: 30px;
+    }
+}

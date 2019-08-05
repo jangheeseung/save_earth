@@ -18,8 +18,7 @@
                                                 <th scope="col" width="30%">이미지</th>
                                                 <th scope="col" width="20%">상품정보</th>
                                                 <th scope="col" width="10%">수량</th>
-                                                <th scope="col" width="20%">가격</th>
-                                                <th scope="col" width="15%">선택</th>
+                                                <th scope="col" width="25%">선택</th>
                                             </tr>
                                         </thead>
                                         <!-- 주문 목록 시작 -->
@@ -42,15 +41,18 @@
                                                                 <strong>3개</strong>
                                                                 <br> <a class="option_button" id="o_move" href="#"><strong> 수량변경</strong></a>
                                                             </td>
-                                                            <!-- 배송상태 -->
                                                             <td>
-                                                                <strong>배송준비중</strong>
+                                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 주문하기</strong></a>
+                                                                <br>
+                                                                <a class="option_button" href="#"><strong> 삭제</strong></a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                     <!-- 주문목록끝 -->
 
                                                 </table>
+                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 전체상품주문</strong></a>
+                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 선택상품주문</strong></a>
                                             </div>
                                         </div>
                                     </div>
