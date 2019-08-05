@@ -7,17 +7,18 @@
       <!-- Signup 시작 -->
         <div class="container_login">
             <h2 class="login_text">Signup</h2>
-            <form>
+            <form method="POST" action="{% url 'signup' %}">
+                {% csrf_token %}
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="siginup_name">Name</label>
                         <!-- user_name -->
-                        <input type="text" class="form-control" id="siginup_name" placeholder="name"></div>
+                        <input type="text" class="form-control" id="siginup_name" placeholder="name" name="userName"></div>
                     </div>
                     <div class="form-group">
                         <label for="signup_id" placeholder="Input id">ID</label>
-                        <!-- user_id -->
-                        <input type="text" class="form-control" id="signup_id" placeholder="id"></div>
+                        <!-- user_id(eamil) -->
+                        <input type="email" class="form-control" id="signup_id" placeholder="id" name="userId"></div>
                         <div class="form-group">
                             <label for="signup_ps1">Password</label>
                             <!-- user_password -->
@@ -25,7 +26,8 @@
                                 type="password"
                                 class="form-control"
                                 id="signup_ps1"
-                                placeholder="password"></div>
+                                placeholder="password"
+                                name="userPassword1"></div>
                             <div class="form-group">
                                 <label for="signup_ps2">Password</label>
                                  <!-- user_password one more-->
@@ -33,7 +35,8 @@
                                     type="password"
                                     class="form-control"
                                     id="signup_ps2"
-                                    placeholder="one more password"></div>
+                                    placeholder="one more password"
+                                    name="userPassword2"></div>
                                 <div class="form-group">
                                     <label for="siginup_address">Address</label>
                                     <!-- user_address -->
@@ -41,11 +44,12 @@
                                         type="text"
                                         class="form-control"
                                         id="siginup_address"
-                                        placeholder="address"></div>
+                                        placeholder="address"
+                                        name="userAddress"></div>
                                     <div class="form-group">
                                         <label for="signup_tell" placeholder="Input id">Tel</label>
                                         <!-- user_tel -->
-                                        <input type="text" class="form-control" id="signup_id" placeholder="tel"></div>
+                                        <input type="text" class="form-control" id="signup_id" placeholder="tel" name="userTel"></div>
                                         <!-- signup_button -->
                                         <button type="submit" class="btn btn-primary btn-block">Signup</button>
                                     </form>

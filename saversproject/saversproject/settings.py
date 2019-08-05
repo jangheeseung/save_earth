@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',#social login
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -49,6 +50,14 @@ INSTALLED_APPS = [
     'pay.apps.PayConfig',
     #main apps
     'main.apps.MainConfig',
+
+    #allauth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    #provider
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -97,7 +106,7 @@ DATABASES = {
         # 'PORT': '3306', # 데이터베이스 포트(보통은 3306)     
         'OPTIONS': {
             'read_default_file': os.path.join(BASE_DIR, 'mysql.cnf'),
-            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',
+            # 'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"', #"data too long for column"에러 없애려고 주석처리.
         }   
     }
 }
@@ -148,3 +157,26 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+AUTH_USER_MODEL = 'login.User'
+
+AUTHENTICATION_BACKENDS = (
+    'login.backends.MyAuthBackend',
+
+    'django.contrib.auth.backends.ModelBackend',
+
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+
+
+# ACCOUNT_EMAIL_REQUIRED = True
+# ACCOUNT_USERNAME_REQUIRED = False
+# ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
+# ACCOUNT_SESSION_REMEMBER = True
+# ACCOUNT_AUTHENTICATION_METHOD = 'email'
+# ACCOUNT_UNIQUE_EMAIL = True
+
+# SESSION_COOKIE_SECURE = True

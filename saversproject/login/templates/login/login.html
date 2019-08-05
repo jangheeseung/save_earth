@@ -1,10 +1,13 @@
 {%extends 'main/layout.html'%}
 {%load staticfiles%}
 {%block content%}
+<!--social로그인 시 필요한 거 load-->
+{% load socialaccount %}
+{% providers_media_js %}
     <!-- google_button을 따올려고 쓴것 -->
     <meta
         name="google-signin-client_id"
-        content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        content="836161812675-8ptmuobuk9545i67morko7tliiogvnes.apps.googleusercontent.com">
 
         <!-- login시작 -->
         <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">
@@ -18,11 +21,12 @@
                             type="text"
                             class="form-control"
                             id="login_id"
-                            aria-describedby="emailHelp"></div>
+                            aria-describedby="emailHelp"
+                            name="userId"div>
                         <div class="form-group">
                             <!-- user_password -->
                             <label for="login_ps" placeholder="Input password">Password</label>
-                            <input type="password" class="form-control" id="login_ps"></div>
+                            <input type="password" class="form-control" id="login_ps" name="userPassword"></div>
                             <!-- login_button -->
                             <button type="submit" class="btn btn-primary btn-block">Login</button>
                             <!-- siginup_button -->
@@ -30,6 +34,7 @@
                         </form>
                         <!-- google_button -->
                         <div id="my-signin2"></div>
+                        <a href="{% provider_login_url 'google' %}">구글 로그인ㄱ</a>
                         <script>
                             // 성공했을때
                             function onSuccess(googleUser) {
