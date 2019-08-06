@@ -18,6 +18,7 @@
                                                 <th scope="col" width="30%">이미지</th>
                                                 <th scope="col" width="20%">상품정보</th>
                                                 <th scope="col" width="10%">수량</th>
+                                                <th scope="col" width="10%">수량</th>
                                                 <th scope="col" width="25%">선택</th>
                                             </tr>
                                         </thead>
@@ -34,31 +35,56 @@
                                                         <td>
                                                             <strong>옥수수빨대
                                                                 <br>[옵션:5m]</strong>
-                                                                <br> <a class="option_button" href="#"><strong> 옵션변경</strong></a>
-                                                            </td>
-                                                            <!-- 제품수량 -->
-                                                            <td>
-                                                                <strong>3개</strong>
-                                                                <br> <a class="option_button" id="o_move" href="#"><strong> 수량변경</strong></a>
-                                                            </td>
-                                                            <td>
-                                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 주문하기</strong></a>
                                                                 <br>
-                                                                <a class="option_button" href="#"><strong> 삭제</strong></a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <!-- 주문목록끝 -->
+                                                                    <a class="option_button" href="#">
+                                                                        <strong>
+                                                                            옵션변경</strong>
+                                                                    </a>
+                                                                </td>
+                                                                <!-- 제품수량 -->
 
-                                                </table>
-                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 전체상품주문</strong></a>
-                                                <a class="option_button"  href="{%url 'pay'%}"><strong> 선택상품주문</strong></a>
+                                                              
+                                                                <td id="test">1</td>
+                                                                <td>
+                                                                      <input type="button" value="push" onclick="test()"/>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="option_button" href="{%url 'pay'%}">
+                                                                        <strong>
+                                                                            주문하기</strong>
+                                                                    </a>
+                                                                    <br>
+                                                                        <a class="option_button" href="#">
+                                                                            <strong>
+                                                                                삭제</strong>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!-- 주문목록끝 -->
+
+                                                        </table>
+                                                        <a class="option_button" href="{%url 'pay'%}">
+                                                            <strong>
+                                                                전체상품주문</strong>
+                                                        </a>
+                                                        <a class="option_button" href="{%url 'pay'%}">
+                                                            <strong>
+                                                                선택상품주문</strong>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </section>
                             </div>
-                        </section>
-                    </div>
 
-                    {%endblock%}
+                            <script type="text/javascript">
+                                function test() {
+                                    var td = document.getElementById("test");
+                                    var n = Number(td.innerHTML);
+                                    td.innerHTML = n + 1;
+                                }
+                            </script>
+                            {%endblock%}

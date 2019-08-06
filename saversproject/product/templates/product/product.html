@@ -5,17 +5,23 @@
         <div class="portfolio-area ptb-90">
             <div class="container_product">
                 <div class="row">
+                  
                     <div class="col-md-3 col-sm-6">
                         <!-- 카드1 -->
-                        <div class="single-service white-bg text-center">
+                        <div class="single-service white-bg text-center"> 
+                             <a href="{%url 'basket'%}">
                             <img src="{%static 'main/img/s.jpg'%}">
                                 <h3>Web Design</h3>
                                 <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                     fuga platea eveniet pulvinar praesent
                                 </p>
-
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fa fa-shopping-basket" style='font-size:25px; padding-top: 4px;'></i>
+                                <a data-toggle="modal" data-target="#exampleModal">
+                                    <form href="#" >
+                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                        4px;'></i> -->
+                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                    </form>
+                                </a>
                                 </a>
                             </div>
                         </div>
@@ -27,10 +33,10 @@
                                     <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                         fuga platea eveniet pulvinar praesent
                                     </p>
-                                    
-                                <a href="#" data-toggle="modal" data-target="#exampleModal">
-                                    <i class="fa fa-shopping-basket" style='font-size:25px; padding-top: 4px;'></i>
-                                </a>
+
+                                    <form href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fa fa-shopping-basket" style='font-size:25px; padding-top: 4px;'></i>
+                                    </form>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
@@ -86,5 +92,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                           
 
                             {%endblock%}

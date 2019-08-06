@@ -1,4 +1,7 @@
-.single-service > img{
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+img{
     width: 15em;
     margin-bottom: 1em;
     margin-top: 2em;
@@ -12,4 +15,9 @@
 .container_product{
     width: 1000px;
     margin: auto;
+}
+
+input{
+    background-color: white;
+    border: 0;
 }
