@@ -78,3 +78,26 @@ h2{
     margin-top: 50px;
     margin-left: 50px;
 }
+
+.question_box{
+    padding:2em;
+    margin-left: 20em;
+}
+
+.answer_box{
+    padding:2em;
+    margin-left: 20em;
+}
+
+.card-body1{
+    margin: 10px;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+.back{
+    margin-left: 79.5em;
+    padding:2em;
+}
