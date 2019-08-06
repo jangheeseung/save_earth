@@ -160,23 +160,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = 'login.User'
 
-AUTHENTICATION_BACKENDS = (
+AUTHENTICATION_BACKENDS = [
     'login.backends.MyAuthBackend',
-
     'django.contrib.auth.backends.ModelBackend',
-
     'allauth.account.auth_backends.AuthenticationBackend',
-)
+]
+    
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
-
-
-# ACCOUNT_EMAIL_REQUIRED = True
-# ACCOUNT_USERNAME_REQUIRED = False
+# LOGIN_URL = '/login/'
 # ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 # ACCOUNT_SESSION_REMEMBER = True
-# ACCOUNT_AUTHENTICATION_METHOD = 'email'
-# ACCOUNT_UNIQUE_EMAIL = True
-
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_USERNAME_REQUIRED = False
 # SESSION_COOKIE_SECURE = True

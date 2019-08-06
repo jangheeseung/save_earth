@@ -65,9 +65,9 @@
 										<!-- nav_mypage -->
 										<li><a href="{%url 'mypage'%}">mypage</a></li>
 										
-										{% if request.user.is_authenticated %}
+										{% if user.is_authenticated %}
 										<!-- nav_logout 로그인이 되어있을때 -->
-										<li>hello, {{user.username}}</li>
+										<li>hello, {{user.name}}</li>
 										<li><a href="{%url 'logout' %}">logout</a></li>
 										{% else %}
 										<!-- nav_login 로그인이 안되어있을때 -->

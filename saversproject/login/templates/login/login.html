@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">
             <div class="container_login">
                 <h2 class="login_text">Login</h2>
-                <form>
+                <form method="POST" action="">
+                    {% csrf_token %}
                     <div class="form-group">
                         <!-- user_id -->
                         <label for="login_id" placeholder="Input id">ID</label>
@@ -23,6 +24,7 @@
                             id="login_id"
                             aria-describedby="emailHelp"
                             name="userId"div>
+                            {{error}}
                         <div class="form-group">
                             <!-- user_password -->
                             <label for="login_ps" placeholder="Input password">Password</label>

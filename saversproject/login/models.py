@@ -68,7 +68,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = 'email' #여기서 지정한 모든 필드는 unique=True 여야 한다는데
-    REQUIRED_FIELDS = ['name'] #user를 생성하는데 필수적인 필드
+    
+    REQUIRED_FIELDS = []
+    # REQUIRED_FIELDS = ['name'] #user를 생성하는데 필수적인 필드
 
     # USER_TYPE_CHOICES = (
     # ('django', 'Django'),

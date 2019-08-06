@@ -76,8 +76,8 @@ class UserCreationForm(forms.ModelForm):
 
     def clean_password2(self):
         # 두 비밀번호 입력 일치 확인
-        password1 = self.cleaned_data.get("userPassword1")
-        password2 = self.cleaned_data.get("userPassword2")
+        password1 = self.cleaned_data.get("password1")
+        password2 = self.cleaned_data.get("password2")
         if password1 and password2 and password1 != password2:
             raise forms.ValidationError("Passwords don't match")
         return password2
@@ -110,6 +110,7 @@ class UserChangeForm(forms.ModelForm):
         return self.initial["password"]
 
 class UserLoginForm(AuthenticationForm):
+    #로그인 폼
     email = forms.CharField(
         max_length=45,
         widget=forms.EmailInput(
@@ -129,3 +130,6 @@ class UserLoginForm(AuthenticationForm):
             }
         )
     )
+    class Meta:
+        model = User
+        fields = ('email', 'password1')
