@@ -1,0 +1,90 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
+        <!-- mypage 시작-->
+        <div class="mypage">
+            <section id="gtco-welcome" class="bg-white section-padding">
+                <div class="container_mypage">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="pl-lg-5 ml-md-5">
+                                <div class="container_mypage2">
+                                    <h2 class="mydetail_h2">장바구니</h2>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" width="5%">체크</th>
+                                                <th scope="col" width="30%">이미지</th>
+                                                <th scope="col" width="20%">상품정보</th>
+                                                <th scope="col" width="10%">수량</th>
+                                                <th scope="col" width="10%">수량</th>
+                                                <th scope="col" width="25%">선택</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- 주문 목록 시작 -->
+                                        <tbody>
+                                            <tr>
+                                                <!-- 주문일자 -->
+                                                <!-- 제품이미지 -->
+                                                <td>
+                                                    <input type="checkbox" aria-label="Checkbox for following text input"></td>
+                                                    <td>
+                                                        <img src="{%static 'main/img/s.jpg'%}"></td>
+                                                        <!-- 제품정보 -->
+                                                        <td>
+                                                            <strong>옥수수빨대
+                                                                <br>[옵션:5m]</strong>
+                                                                <br>
+                                                                    <a class="option_button" href="#">
+                                                                        <strong>
+                                                                            옵션변경</strong>
+                                                                    </a>
+                                                                </td>
+                                                                <!-- 제품수량 -->
+
+                                                              
+                                                                <td id="test">1</td>
+                                                                <td>
+                                                                      <input type="button" value="push" onclick="test()"/>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="option_button" href="{%url 'pay'%}">
+                                                                        <strong>
+                                                                            주문하기</strong>
+                                                                    </a>
+                                                                    <br>
+                                                                        <a class="option_button" href="#">
+                                                                            <strong>
+                                                                                삭제</strong>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <!-- 주문목록끝 -->
+
+                                                        </table>
+                                                        <a class="option_button" href="{%url 'pay'%}">
+                                                            <strong>
+                                                                전체상품주문</strong>
+                                                        </a>
+                                                        <a class="option_button" href="{%url 'pay'%}">
+                                                            <strong>
+                                                                선택상품주문</strong>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <script type="text/javascript">
+                                function test() {
+                                    var td = document.getElementById("test");
+                                    var n = Number(td.innerHTML);
+                                    td.innerHTML = n + 1;
+                                }
+                            </script>
+                            {%endblock%}

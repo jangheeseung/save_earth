@@ -1,0 +1,23 @@
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+img{
+    width: 15em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.single-service > h3{
+    padding-top: 10px;
+}
+.single-service > p{
+    padding: 10px;
+}
+.container_product{
+    width: 1000px;
+    margin: auto;
+}
+
+input{
+    background-color: white;
+    border: 0;
+}

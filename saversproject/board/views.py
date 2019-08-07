@@ -5,3 +5,5 @@ def board(request):
         return render(request,'board/board.html')
 def write(request):
         return render(request,'board/write.html')
+def detail(request):
+        return render(request,'board/detail.html')

@@ -1,5 +1,98 @@
 {%extends 'main/layout.html'%}
 {%load staticfiles%}
 {%block content%}
-<h1>product page</h1>
-{%endblock%}
+    <link rel="stylesheet" href="{%static 'main/css/layout/product.css'%}">
+        <div class="portfolio-area ptb-90">
+            <div class="container_product">
+                <div class="row">
+                  
+                    <div class="col-md-3 col-sm-6">
+                        <!-- 카드1 -->
+                        <div class="single-service white-bg text-center"> 
+                             <a href="{%url 'basket'%}">
+                            <img src="{%static 'main/img/s.jpg'%}">
+                                <h3>Web Design</h3>
+                                <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
+                                    fuga platea eveniet pulvinar praesent
+                                </p>
+                                <a data-toggle="modal" data-target="#exampleModal">
+                                    <form href="#" >
+                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                        4px;'></i> -->
+                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                    </form>
+                                </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <!-- 카드2 -->
+                            <div class="single-service white-bg text-center">
+                                <img src="{%static 'main/img/s.jpg'%}">
+                                    <h3>Web Design</h3>
+                                    <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
+                                        fuga platea eveniet pulvinar praesent
+                                    </p>
+
+                                    <form href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fa fa-shopping-basket" style='font-size:25px; padding-top: 4px;'></i>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <!-- 카드3 -->
+                                <div class="single-service white-bg text-center">
+                                    <img src="{%static 'main/img/s.jpg'%}">
+                                        <h3>Development
+                                        </h3>
+                                        <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
+                                            fuga platea eveniet pulvinar praesent
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <!-- 카드4 -->
+                                    <div class="single-service white-bg text-center">
+                                        <img src="{%static 'main/img/s.jpg'%}">
+                                            <h3>Photography</h3>
+                                            <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
+                                                fuga platea eveniet pulvinar praesent
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    장바구니에 제품이 담겼습니다
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- 그냥 닫히면 될거같아서close로 햇어용 -->
+                                    <a class="btn btn-primary" data-dismiss="modal">쇼핑이어하기</a>
+                                    <a class="btn btn-primary" href="{%url 'basket'%}">장바구니<a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                           
+
+                            {%endblock%}

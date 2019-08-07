@@ -2,7 +2,6 @@
 {%load staticfiles%}
 {%block content%}
     <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
-        <body id="body">
             <!-- mypage 시작-->
             <div class="mypage">
                 <section id="gtco-welcome" class="bg-white section-padding">
@@ -11,9 +10,51 @@
                             <div class="row">
                                 <div class="pl-lg-5 ml-md-5">
                                     <div class="container_mypage2">
-                                        <h1>delivery_detail</h1>
+                                        <h2 class="mydetail_h2">주문조회</h2>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" width="10%">주문일자</th>
+                                                    <th scope="col" width="30%">이미지</th>
+                                                    <th scope="col" width="20%">상품정보</th>
+                                                    <th scope="col" width="10%">수량</th>
+                                                    <th scope="col" width="20%">주문처리상태</th>
+                                                </tr>
+                                            </thead>
+                                            <!-- 주문 목록 시작 -->
+                                            <tbody>
+                                                <tr>
+                                                    <!-- 주문일자 -->
+                                                    <th scope="row">2019-02-18</th>
+                                                    <!-- 제품이미지 -->
+                                                    <td><img src="{%static 'main/img/s.jpg'%}"></td>
+                                                    <!-- 제품정보 -->
+                                                    <td><strong>옥수수빨대 <br>[옵션:5m]</strong></td>
+                                                    <!-- 제품수량 -->
+                                                    <td><strong>3개</strong></td>
+                                                    <!-- 배송상태 -->
+                                                    <td><strong>배송준비중</strong></td>
+                                                </tr>
+                                            </tbody>
+                                            <!-- 주문목록끝 -->
+                                            
+                                            <!-- 이건 한번더 예시 -->
+                                            <tbody>    
+                                                <tr>
+                                                    <!-- 주문일자 -->
+                                                    <th scope="row">2019-02-18</th>
+                                                    <!-- 제품이미지 -->
+                                                    <td><img src="{%static 'main/img/s.jpg'%}"></td>
+                                                    <!-- 제품정보 -->
+                                                    <td><strong>옥수수빨대 <br>[옵션:5m]</strong></td>
+                                                    <!-- 제품수량 -->
+                                                    <td><strong>3개</strong></td>
+                                                    <!-- 배송상태 -->
+                                                    <td><strong>배송준비중</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

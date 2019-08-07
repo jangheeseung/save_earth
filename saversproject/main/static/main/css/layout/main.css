@@ -1,0 +1,11 @@
+.single-service > img{
+    width: 22em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.single-service > h3{
+    padding-top: 10px;
+}
+.single-service > p{
+    padding: 10px;
+}

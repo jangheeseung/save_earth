@@ -2,7 +2,6 @@
 h1{
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .table_container{
@@ -22,37 +21,29 @@ h1{
 }
 
 /* write.html에 대한 css */
-.wtitle{
-    font-size: 18px;
-    margin-left: 120px;
-    /* padding-left: 90px; */
-}
-.etitle{
-    margin-left: 80px;
+.write_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin:auto;
+    width : 70%;
+    margin-bottom: 28em; */
 }
 
-.rtitle{
-    font-size: 18px;
-    margin-left: 120px;
-}
-.write_container{
-    margin:auto;
-    width : 70%;
-}
 
 .submit{
     margin-left: 65.6em;
+    margin-bottom: 2em;
 }
 
-.content_group{
+/* .content_group{
     display: grid;
     grid-template-columns: 260px 800px;
     grid-template-rows: 50px 50px;
-}
+} */
 
-#body {
-    background-color: #f4ede5;
-}
 
 @media (min-width: 992px) {
     .board .section-padding {
@@ -75,4 +66,38 @@ h1{
 section{
     width: 95%;
     margin: auto;
+}
+
+/* detail.html에 대한 css */
+h2{
+    text-align: center;
+    padding-top: 12em;
+}
+
+.answer{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.question_box{
+    padding:2em;
+    margin-left: 20em;
+}
+
+.answer_box{
+    padding:2em;
+    margin-left: 20em;
+}
+
+.card-body1{
+    margin: 10px;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+.back{
+    margin-left: 79.5em;
+    padding:2em;
 }

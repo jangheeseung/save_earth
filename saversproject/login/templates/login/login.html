@@ -1,73 +1,37 @@
 {%extends 'main/layout.html'%}
 {%load staticfiles%}
 {%block content%}
-<!--social로그인 시 필요한 거 load-->
-{% load socialaccount %}
-{% providers_media_js %}
-    <!-- google_button을 따올려고 쓴것 -->
-    <meta
-        name="google-signin-client_id"
-        content="836161812675-8ptmuobuk9545i67morko7tliiogvnes.apps.googleusercontent.com">
 
         <!-- login시작 -->
         <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">
-            <div class="container_login">
-                <h2 class="login_text">Login</h2>
-                <form method="POST" action="">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <!-- user_id -->
-                        <label for="login_id" placeholder="Input id">ID</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="login_id"
-                            aria-describedby="emailHelp"
-                            name="userId"div>
-                            {{error}}
-                        <div class="form-group">
-                            <!-- user_password -->
-                            <label for="login_ps" placeholder="Input password">Password</label>
-                            <input type="password" class="form-control" id="login_ps" name="userPassword"></div>
-                            <!-- login_button -->
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
-                            <!-- siginup_button -->
-                            <a href="{% url 'signup'%}" class="btn btn-primary btn-block">Signup</a>
-                        </form>
-                        <!-- google_button -->
-                        <div id="my-signin2"></div>
-                        <a href="{% provider_login_url 'google' %}">구글 로그인ㄱ</a>
-                        <script>
-                            // 성공했을때
-                            function onSuccess(googleUser) {
-                                console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                            }
-                            // 실패했을때
-                            function onFailure(error) {
-                                console.log(error);
-                            }
-                            function renderButton() {
-                                // 버튼크기랑 버튼처리
-                                gapi
-                                    .signin2
-                                    .render('my-signin2', {
-                                        'scope': 'profile email',
-                                        'width': 400,
-                                        'height': 35,
-                                        'longtitle': true,
-                                        'theme': 'dark',
-                                        'onsuccess': onSuccess,
-                                        'onfailure': onFailure
-                                    });
-                            }
-                        </script>
+            <div class="login">
+                <section id="gtco-welcome" class="bg-white section-padding">
+                    <div class="container_login">
+                        <h2 class="login_text">Login</h2>
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <!-- user_id -->
+                                <label for="login_id" placeholder="Input id">ID</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="login_id"
+                                    aria-describedby="emailHelp"
+                                    name="userId"></div>
+                                <div class="form-group">
+                                    <!-- user_password -->
+                                    <label for="login_ps" placeholder="Input password">Password</label>
+                                    <input type="password" class="form-control" id="login_ps" name="userPassword"></div>
+                                    <!-- login_button -->
+                                    <a class="login_button" href="#"><strong> Login</strong></a>
+                                    <!-- siginup_button -->
+                                    <a class="login_button" href="{% url 'signup'%}"><strong> Signup</strong></a>
+                                </form>
+                               <a class="google_button" href="#"><strong> Google login</strong></a>
+                            <!-- login끝 -->
 
-                        <script
-                            src="https://apis.google.com/js/platform.js?onload=renderButton"
-                            async="async"
-                            defer="defer"></script>
-                        <!-- google_button 끝 -->
+                        </section>
                     </div>
-                    <!-- login끝 -->
 
                     {%endblock%}
