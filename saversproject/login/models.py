@@ -24,7 +24,7 @@ class UserManager(BaseUserManager):
         )
 
         user.set_password(password) #set_password() : 패스워드 암호화시키기
-        user.save(using=self._db)
+        # user.save(using=self._db)
         return user
 
     def create_superuser(self, email, name, password):
@@ -83,7 +83,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = ('user') #admin 페이지에서 조회할 떄 읽기 쉬운 이름으로 정의하는 옵션
         verbose_name_plural = ('users') #영어 기준으로 복수형 이름으로 정의하는 옵션
         ordering = ('email',) #모델의 정렬 순서 지정, 여러 개일 경우 필드 이름을 리스트로 나열.기본값은 오름차순. -를 붙이면 내림차순
-        managed = True #False일 때 : 모델이 자동으로 테이블을 생성하지 않게 함.
+        managed = False #False일 때 : 모델이 자동으로 테이블을 생성하지 않게 함.
         db_table = 'user'
 
     def __str__(self):

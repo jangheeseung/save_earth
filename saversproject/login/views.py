@@ -1,8 +1,9 @@
 from django.shortcuts import get_object_or_404, render, redirect
 from login.models import User
+from django.contrib import auth
 from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.http import HttpResponse
-from .backends import MyAuthBackend
+# from .backends import MyAuthBackend
 
 # from .forms import UserCreationForm, UserChangeForm, UserLoginForm
 
@@ -51,20 +52,23 @@ from .backends import MyAuthBackend
 #         return redirect('login')
 
 
-
+#login(request, user, backend='django.contrib.auth.backends.ModelBackend')
 
 def login(request):
         if request.method == 'POST':
                 userid = request.POST['userId']
                 password = request.POST['userPassword']
-                user = get_user_model().objects.get(email=userid)
-                # print(user.name+"_____________________")
+                username = get_user_model().objects.get(email=userid).name
+                # print(username)
                 # u = authenticate(request, username=user.name, password=password)
-                # user = authenticate(userid, password)
-                u = MyAuthBackend.authenticate(request,email=userid, password=password)
-                if u is not None:
+                # print("33333333333333_______________", user)
+
+                user = auth.authenticate(email=username, password=password, request=request)
+                # u = MyAuthBackend.authenticate(request, userid, password)
+                print("____________________________________________________________________", user)
+                if user is not None:
                         #user객체가 있음
-                        login(request,u)
+                        auth.login(request,user)
                         return redirect('main')
                 else:
                         print("&&&&&&&&&&&&&&&&&&&&&&&&&&&없대 왜 없어&&&&&&&&&&&&&&&&&&&&&&")
@@ -88,11 +92,11 @@ def signup(request):
                         new_user.tel=request.POST['userTel']
                         new_user.address=request.POST['userAddress']
                         new_user.save()
-                        login(new_user)
-                        return redirect('main') 
+                        # auth.login(request, new_user)
+                        return redirect('login') 
                 else:
                         #password와 확인용 password가 불일치 할 때
-                        return render(request, 'login/login.html', {'error': 'id or password is incorrect.'})
+                        return render(request, 'login/signup.html', {'error': 'id or password is incorrect.'})
                         # return HttpResponse('비밀번호가 불일치 합니다. 다시 입력해주세요')
 
         else:

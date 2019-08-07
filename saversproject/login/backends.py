@@ -1,13 +1,15 @@
 from django.contrib.auth import get_user_model
+from django.contrib.auth.hashers import check_password
 import logging
 
 UserModel = get_user_model()
+#UserModel : login.models.User
 
 class MyAuthBackend(object):
-    def authenticate(self, email, password):
+    def authenticate(self, email, password=None):
         try:
             user = UserModel.objects.get(email=email)
-            if user.check_password(password) and self.user_can_authenticate(user):
+            if user.check_password(password):
                 return user
             else:
                 return None
