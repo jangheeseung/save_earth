@@ -1,0 +1,135 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'main/css/layout/mypage.css'%}">
+        <!-- mypage 시작-->
+        <div class="mypage">
+            <section id="gtco-welcome" class="bg-white section-padding">
+                <div class="container_mypage">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="pl-lg-5 ml-md-5">
+                                <div class="container_mypage2">
+                                    <h2 class="mydetail_h2">주문확인</h2>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" width="10%">주문일자</th>
+                                                <th scope="col" width="30%">이미지</th>
+                                                <th scope="col" width="20%">상품정보</th>
+                                                <th scope="col" width="10%">수량</th>
+                                                <th scope="col" width="20%">가격</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- 주문 목록 시작 -->
+                                        <tbody>
+                                            <tr>
+                                                <!-- 주문일자 -->
+                                                <th scope="row">2019-02-18</th>
+                                                <!-- 제품이미지 -->
+                                                <td>
+                                                    <img src="{%static 'main/img/s.jpg'%}"></td>
+                                                    <!-- 제품정보 -->
+                                                    <td>
+                                                        <strong>옥수수빨대
+                                                            <br>[옵션:5m]</strong>
+                                                        </td>
+                                                        <!-- 제품수량 -->
+                                                        <td>
+                                                            <strong>3개</strong>
+                                                        </td>
+                                                        <!-- 배송상태 -->
+                                                        <td>
+                                                            <strong>000원</strong>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <!-- 주문목록끝 -->
+                                            </table>
+                                            <hr>
+                                                <h2 class="mydetail_h2">주문정보</h2>
+                                                <table border="1" summary="">
+                                                    <colgroup>
+                                                        <col style="width:150px;">
+                                                            <col style="width:auto;"></colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="order-text" scope="row">아이디</th>
+                                                                    <td>
+                                                                        <input class="order_input" placeholder="" value="" type="text"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th class="order-text" scope="row">비밀번호</th>
+
+                                                                        <td>
+
+                                                                            <input class="order_input" value="" type="password"></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="order-text" scope="row">비밀번호 확인</th>
+                                                                            <td>
+                                                                                <input class="order_input" value="" type="password"></td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <th class="order-text" scope="row">이름</th>
+
+                                                                                <td>
+
+                                                                                    <input class="order_input" type="text" maxlength="20"></td>
+                                                                                </tr>
+
+                                                                                <tr class="">
+                                                                                    <th class="order-text" scope="row">주소
+                                                                                    </th>
+                                                                                    <td>
+
+                                                                                        <input class="order_input" value="" type="text">
+                                                                                            <br></tr>
+
+                                                                                            <tr class="">
+                                                                                                <th class="order-text" scope="row">휴대전화</th>
+
+                                                                                                <td>
+                                                                                                    <input class="order_input" value="" type="text"></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th class="order-text" scope="row">이메일</th>
+
+                                                                                                    <td>
+                                                                                                        <input class="order_input" value="" type="text"></td>
+                                                                                                    </tr>
+
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                            <br>
+                                                                                                <br>
+                                                                                                    <hr>
+                                                                                                        <h2 class="mydetail_h2">결제</h2>
+                                                                                                        <div class="pay">
+                                                                                                            <table class="table">
+                                                                                                                <thead>
+                                                                                                                    <tr>
+                                                                                                                        <th scope="col" width="100%">총 주문금액</th>
+                                                                                                                    </tr>
+                                                                                                                </thead>
+                                                                                                                <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <th scope="row">000원</th>
+                                                                                                                    </tr>
+                                                                                                                </tbody>
+                                                                                                            </table>
+                                                                                                            <a class="btn btn-warning"style="margin-left: 73em;" href="#">
+                                                                                                                <strong>
+                                                                                                                    주문하기</strong>
+                                                                                                            </a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                            </div>
+
+                                                                            {%endblock%}
