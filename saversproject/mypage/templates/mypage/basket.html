@@ -27,16 +27,19 @@
                                         <tbody>
                                             <tr>
                                                 <!-- 주문일자 -->
-                                                <!-- 제품이미지 -->
+
                                                 <td>
+                                                    <!-- 체크-->
                                                     <input type="checkbox" aria-label="Checkbox for following text input"></td>
                                                     <td>
+                                                        <!-- 제품이미지 -->
                                                         <img src="{%static 'main/img/s.jpg'%}"></td>
-                                                        <!-- 제품정보 -->
                                                         <td>
+                                                            <!-- 제품정보 -->
                                                             <strong>옥수수빨대
                                                                 <br>[옵션:5m]</strong>
                                                                 <br>
+                                                                    <!-- 변경버튼 -->
                                                                     <a class="option_button" href="#">
                                                                         <strong>
                                                                             옵션변경</strong>
@@ -45,26 +48,30 @@
                                                                 <!-- 제품수량 -->
                                                                 <td id="test">1</td>
                                                                 <td>
-                                                                    <!-- <input type="button" class="search" value="&#xf151;" onclick="test()"/> -->
                                                                     <a href="#">
+                                                                        <!-- up 버튼 -->
                                                                         <i class="fa fa-caret-square-o-up" style='font-size:20px;' onclick="test()"></i>
                                                                     </a>
                                                                     <br>
                                                                         <br>
                                                                             <a href="#">
+                                                                                <!-- down버튼 -->
                                                                                 <i class="fa fa-caret-square-o-down" style='font-size:20px;' onclick="test2()"></i>
                                                                             </a>
 
                                                                         </td>
+                                                                        <!-- 가격 -->
                                                                         <td>000원</td>
                                                                         <td>
-                                                                            <a class="btn btn-warning" href="{%url 'pay'%}">
+                                                                            <!-- 주문하기 버튼 -->
+                                                                            <a class="btn btn-primary" href="{%url 'pay'%}">
                                                                                 <strong>
                                                                                     주문하기</strong>
                                                                             </a>
                                                                             <br>
                                                                                 <br>
-                                                                                    <a class="btn btn-warning" href="#">
+                                                                                    <!-- 삭제 버튼 -->
+                                                                                    <a class="btn btn-primary" href="#">
                                                                                         <strong>
                                                                                             삭제</strong>
                                                                                     </a>
@@ -95,6 +102,7 @@
                                             </section>
                                         </div>
 
+                                        <!-- up down버튼 js -->
                                         <script type="text/javascript">
                                             function test() {
                                                 var td = document.getElementById("test");

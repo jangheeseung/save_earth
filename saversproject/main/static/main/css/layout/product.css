@@ -3,8 +3,7 @@ input[type="submit"] {
 }
 img{
     width: 15em;
-    margin-bottom: 1em;
-    margin-top: 2em;
+    margin: 1em;
 }
 .single-service > h3{
     padding-top: 10px;
@@ -20,4 +19,8 @@ img{
 input{
     background-color: white;
     border: 0;
+}
+
+.single-service{
+    width: 17em;
 }

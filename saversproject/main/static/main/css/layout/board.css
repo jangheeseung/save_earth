@@ -11,6 +11,7 @@ h1{
 
 .table_page{
     margin-left : 48.5em;
+    margin-bottom: 10px;
 }
 .Write{
     margin-left : 93em;
@@ -65,7 +66,12 @@ h1{
 
 section{
     width: 95%;
+    height: 110%;
     margin: auto;
+}
+
+footer{
+    margin-top:2em;
 }
 
 /* detail.html에 대한 css */
@@ -100,4 +106,8 @@ h2{
 .back{
     margin-left: 79.5em;
     padding:2em;
+}
+
+.li_down{
+    margin-bottom: 20em;
 }

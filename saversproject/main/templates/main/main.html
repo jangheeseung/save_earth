@@ -9,23 +9,12 @@
                     style="background-image: url(static/main/img/eco.jpg);">
                     <div class="slider-title">
                         <h2 class="animated">SAVERS</h2>
-                        <p class="animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et.
+                        <p class="animated">
                         </p>
-                        <a class="animated" href="#PRODUCT">read more</a>
+                        <a href="{%url 'product'%}">Product</a>
                     </div>
                 </div>
-                <div
-                    class="single-slider"
-                    style="background-image: url(static/main/img/fox.jpg);">
-                    <div class="slider-title">
-                        <h2 class="animated">We are minimalist</h2>
-                        <p class="animated">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et.
-                        </p>
-                        <a class="animated" href="#">read more</a>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -120,9 +109,8 @@
 
                 <div class="row justify-content-center pb-3">
                     <div class="col-md-10 heading-section text-center ftco-animate">
-                        <h1 class="big">Pricing</h1>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                            Consonantia</p>
+                        <h1 class="big">월정액</h1>
+                        <p>자신이 원하는 가격,기간동안 편하게 사용하고, 기부헤 보세요~</p>
                     </div>
                 </div>
                 <div class="row">
@@ -131,16 +119,21 @@
                             <div>
                                 <h3 class="mb-4">1Month</h3>
                                 <p>
-                                    <span class="price">$50.00</span>
-                                    <span class="per">/ session</span>
+                                    <span class="price">Seed</span>
+                                    <span class="per"></span>
                                 </p>
                             </div>
                             <ul>
-                                <a href="#"><li>3000won</li></a>
-                                <a href="#"><li>5000won</li></a>
-                                <a href="#"><li>10000won</li></a>
-                                <a href="#"><li>Hair Dresser</li></a>
-                                <a href="#"><li>Hair Spa</li></a>
+                                <a href="{%url 'pay'%}">
+                                    <li>3000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>5000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>10000won</li>
+                                </a>
+
                             </ul>
 
                         </div>
@@ -150,16 +143,21 @@
                             <div>
                                 <h3 class="mb-4">3Month</h3>
                                 <p>
-                                    <span class="price">$34.50</span>
-                                    <span class="per">/ session</span>
+                                    <span class="price">Sprout</span>
+
                                 </p>
                             </div>
                             <ul>
-                                <a href="#"><li>3000won</li></a>
-                                <a href="#"><li>5000won</li></a>
-                                <a href="#"><li>10000won</li></a>
-                                <li>Nails</li>
-                                <li>Nail Cut</li>
+                                <a href="{%url 'pay'%}">
+                                    <li>3000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>5000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>10000won</li>
+                                </a>
+
                             </ul>
 
                         </div>
@@ -169,16 +167,21 @@
                             <div>
                                 <h3 class="mb-4">6Month</h3>
                                 <p>
-                                    <span class="price">$54.50</span>
-                                    <span class="per">/ session</span>
+                                    <span class="price">Flower</span>
+
                                 </p>
                             </div>
                             <ul>
-                                <a href="#"><li>3000won</li></a>
-                                <a href="#"><li>5000won</li></a>
-                                <a href="#"><li>10000won</li></a>
-                                <li>Facial Massage</li>
-                                <li>Facial Spa</li>
+                                <a href="{%url 'pay'%}">
+                                    <li>3000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>5000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>10000won</li>
+                                </a>
+
                             </ul>
 
                         </div>
@@ -188,16 +191,21 @@
                             <div>
                                 <h3 class="mb-4">1year</h3>
                                 <p>
-                                    <span class="price">$89.50</span>
-                                    <span class="per">/ session</span>
+                                    <span class="price">Fruit</span>
+
                                 </p>
                             </div>
                             <ul>
-                                <a href="#"><li>3000won</li></a>
-                                <a href="#"><li>5000won</li></a>
-                                <a href="#"><li>10000won</li></a>
-                                <li>Body Spa</li>
-                                <li>Relaxing</li>
+                                <a href="{%url 'pay'%}">
+                                    <li>3000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>5000won</li>
+                                </a>
+                                <a href="{%url 'pay'%}">
+                                    <li>10000won</li>
+                                </a>
+
                             </ul>
 
                         </div>
@@ -211,14 +219,14 @@
             <div class="portfolio-area ptb-90">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2>PRODUCT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                        <h2>제품</h2>
+                        <p>원하는 물품을 카테고리별로 편하게</p>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-sm-6">
                             <div class="single-service white-bg text-center">
                                 <img src="{%static 'main/img/s.jpg'%}">
-                                    <h3>Web Design</h3>
+                                    <h3>빨대</h3>
                                     <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                         fuga platea eveniet pulvinar praesent
                                     </p>
@@ -227,8 +235,7 @@
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-service white-bg text-center">
                                     <img src="{%static 'main/img/s.jpg'%}">
-                                        <h3>Development
-                                        </h3>
+                                        <h3>텀블러</h3>
                                         <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                             fuga platea eveniet pulvinar praesent
                                         </p>
@@ -237,7 +244,7 @@
                                 <div class="col-md-4 col-sm-6">
                                     <div class="single-service white-bg text-center">
                                         <img src="{%static 'main/img/s.jpg'%}">
-                                            <h3>Photography</h3>
+                                            <h3>에코백</h3>
                                             <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                                 fuga platea eveniet pulvinar praesent
                                             </p>
@@ -246,7 +253,7 @@
                                     <div class="col-md-4 col-sm-6">
                                         <div class="single-service white-bg text-center">
                                             <img src="{%static 'main/img/s.jpg'%}">
-                                                <h3>Branding</h3>
+                                                <h3>욕실용품</h3>
                                                 <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                                     fuga platea eveniet pulvinar praesent
                                                 </p>
@@ -255,7 +262,7 @@
                                         <div class="col-md-4 col-sm-6">
                                             <div class="single-service white-bg text-center">
                                                 <img src="{%static 'main/img/s.jpg'%}">
-                                                    <h3>Support</h3>
+                                                    <h3>애완동물</h3>
                                                     <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                                         fuga platea eveniet pulvinar praesent
                                                     </p>
@@ -264,7 +271,7 @@
                                             <div class="col-md-4 col-sm-6">
                                                 <div class="single-service white-bg text-center xs-service">
                                                     <img src="{%static 'main/img/s.jpg'%}">
-                                                        <h3>Marketing</h3>
+                                                        <h3>기타</h3>
                                                         <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
                                                             fuga platea eveniet pulvinar praesent
                                                         </p>
