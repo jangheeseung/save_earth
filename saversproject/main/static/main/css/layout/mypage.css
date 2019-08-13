@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 /* ---------------------------------------------mypage.html-------------------------------------------------------- */
 @media (min-width: 992px) {
     .mypage .section-padding {
@@ -60,7 +61,7 @@
     flex: 0 0 110px;
 }
 .user_row:nth-child(2) {
-    flex: 0 0 220px;
+    flex: 0 0 230px;
     margin-top: 1.1em;
 }
 .user_row:nth-child(3) {
@@ -78,11 +79,11 @@
     height: 12em;
 
 }
-.user_row > h4 {
+.user_row >  {
     margin-bottom: 1.5em;
 }
 
-h4 > img {
+ > img {
     width: 1.5em;
     height: 1.5em;
 }
@@ -157,3 +158,9 @@ input{
     font-size: 20px;
 }
 
+p{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 0.3em;
+    color: black;
+    font-size: 15px;
+}
