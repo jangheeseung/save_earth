@@ -14,7 +14,8 @@ class NoticeBoardAdmin(admin.ModelAdmin):
     list_display = ['id','title', 'content']
 
 class QABoardAdmin(admin.ModelAdmin):
-    list_display = ['id','user', 'title','content']
+    # list_display = ['id','user', 'title','content']
+    list_display = ['id', 'title','content']
 
 class QABoardCommentAdmin(admin.ModelAdmin):
     list_display = ['id', 'content', 'q_a']

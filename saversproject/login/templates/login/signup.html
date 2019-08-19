@@ -41,6 +41,9 @@
                                             name="userPassword2"></div>
                                         <div class="form-group">
                                             <label for="siginup_address">Address</label>
+                                            {% if error %}
+                                            {{error}}
+                                            {% endif %}
                                             <!-- user_address -->
                                             <input
                                                 type="text"
@@ -53,7 +56,8 @@
                                                 <!-- user_tel -->
                                                 <input type="text" class="form-control" id="signup_id" placeholder="tel" name="userTel"></div>
                                                 <!-- signup_button -->
-                                                <a class="login_button" href="#"><strong> Signup</strong></a>
+                                                <button type="submit" class="login_button"><strong>Signup</strong></button>
+                                                <!-- <a class="login_button" href="#"><strong> Signup</strong></a> -->
                                             </form>
                                         </div>
                                     </section>

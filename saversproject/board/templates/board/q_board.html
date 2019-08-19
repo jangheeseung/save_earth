@@ -28,7 +28,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <a href="#">
+                                    <!-- <a href="#">
                                         <tr>
 
                                             <th scope="row" width="12%">NOTICE</th>
@@ -38,7 +38,22 @@
                                             <td>20</td>
 
                                         </tr>
+                                    </a> -->
+                                    {% if questions %}
+                                    {% for q in questions.all %}
+                                    <a href="#">
+                                            <tr>
+    
+                                                <th scope="row" width="12%">NOTICE</th>
+                                                <td><a href="{%url 'QandA_detail' q.id %}">{{ q.title }}</td>
+                                                <td>hye ji</td>
+                                                <td>{{ q.pub_date }}</td>
+                                                <td>20</td>
+    
+                                            </tr>
                                     </a>
+                                    {% endfor %}
+                                    {% endif %}
                                     <tr>
                                         <th scope="row" width="12%">1</th>
                                         <td>Save Save</td>

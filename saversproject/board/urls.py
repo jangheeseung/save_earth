@@ -5,9 +5,15 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('',views.board,name="board"),
+    path('notice/',views.noticeboard,name="noticeboard"),
+    path('notice/<int:noticeboard_id>/',views.notice_detail,name="notice_detail"),
+
+    path('qaboard/',views.qaboard,name="qaboard"),
+    path('qaboard/<int:qaboard_id>/',views.QandA_detail,name="QandA_detail"),
+
     path('write/',views.write,name="write"),
     path('detail/',views.detail,name="detail"),
+    path('n_create/',views.n_create,name="n_create"),
 
 ]
 

@@ -7,68 +7,20 @@ from django.http import HttpResponse
 
 # from .forms import UserCreationForm, UserChangeForm, UserLoginForm
 
-# def login(request):
-#         return render(request, 'login/login.html')
 
-# def signup(request):
-#         usermodel = get_user_model()
-#         if request.method == 'POST':
-#                 signupform = UserCreationForm(request.POST)
-#                 if signupform.is_valid():
-#                         new_user = usermodel.objects.create_user(
-#                         email=signupform.cleaned_data['email'],
-#                         name=signupform.cleaned_data['name'],
-#                         password=signupform.clean_password2()
-#                         )
-                        
-#                         signupform.save(commit=False)
-#                         new_user.address = signupform.cleaned_data['address']
-#                         new_user.tel = signupform.cleaned_data['tel']
-#                         new_user.save()
-#                         return render(request, 'main/main.html', {'form':signupform})
-#         else:
-#                 signupform = UserCreationForm()
-#         return render(request, 'login/signup.html')
-#         # return render(request, 'main/main.html', {'form':signupform})
-        
-
-# def signin(request):
-#         if request.method == 'POST':
-#                 signinform = UserLoginForm()
-#                 id = request.POST['userId']
-#                 password = request.POST['userPassword']
-#                 u = authenticate(userEmail=id, password=password)
-#                 if u is not None:
-#                         if u.is_active:
-#                                 login(request, user=u)
-#                                 return render(request, 'main/main.html')
-#                 else:
-#                         return render(request, 'login/login.html', {'error': '아이디 또는 비밀번호를 다시 확인바랍니다.'}) 
-#         else:
-#                 return redirect('login')
-
-# def signout(request):
-#         logout(request)
-#         return redirect('login')
-
-
-#login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-
-def login(request):
+def signin(request):
         if request.method == 'POST':
-                userid = request.POST['userId']
+                # userid = request.POST['userId']
+                email = request.POST['userId']
                 password = request.POST['userPassword']
-                username = get_user_model().objects.get(email=userid).name
-                # print(username)
-                # u = authenticate(request, username=user.name, password=password)
-                # print("33333333333333_______________", user)
-
-                user = auth.authenticate(email=username, password=password, request=request)
+                
+                print(email + ' ' + password)
+                user = authenticate(email=email, password=password)
                 # u = MyAuthBackend.authenticate(request, userid, password)
-                print("____________________________________________________________________", user)
+                print("____________________________________________________________________--------->", user)
                 if user is not None:
                         #user객체가 있음
-                        auth.login(request,user)
+                        auth.login(request, user, backend='django.contrib.auth.backends.ModelBackend')
                         return redirect('main')
                 else:
                         print("&&&&&&&&&&&&&&&&&&&&&&&&&&&없대 왜 없어&&&&&&&&&&&&&&&&&&&&&&")
@@ -85,18 +37,21 @@ def signup(request):
                         usermodel = get_user_model()
                         new_user = usermodel.objects.create_user(
                                 email=request.POST['userId'],
+                                password=request.POST['userPassword1'],
                                 name=request.POST['userName'],
-                                password=request.POST['userPassword1']
+                                tel = request.POST['userTel'],
+                                address = request.POST['userAddress'],
                         )
                         
-                        new_user.tel=request.POST['userTel']
-                        new_user.address=request.POST['userAddress']
-                        new_user.save()
-                        # auth.login(request, new_user)
-                        return redirect('login') 
+                        # new_user.tel=request.POST['userTel']
+                        # new_user.address=request.POST['userAddress']
+                        # new_user.save()
+                        auth.login(request, new_user, backend='django.contrib.auth.backends.ModelBackend')
+                        # return redirect('login')
+                        return redirect('main') 
                 else:
                         #password와 확인용 password가 불일치 할 때
-                        return render(request, 'login/signup.html', {'error': 'id or password is incorrect.'})
+                        return render(request, 'login/signup.html', {'error': '비밀번호가 불일치합니다.'})
                         # return HttpResponse('비밀번호가 불일치 합니다. 다시 입력해주세요')
 
         else:
@@ -104,10 +59,8 @@ def signup(request):
                 return render(request,'login/signup.html')
 
 def signout(request):
-        if request.method == 'POST':
-                logout(request)
-                redirect('main')
-        return render(request, 'login/login.html')
+        logout(request)
+        return redirect('main')
         # if user.is_athenticated() == True:
         #         logout(request)
         #         return render(request, 'login/login.html')

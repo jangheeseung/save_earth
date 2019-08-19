@@ -11,8 +11,8 @@ class Category(models.Model):
     name = models.CharField(max_length=45)
 
     class Meta:
-        managed = False
-        db_table = 'category'
+        managed = True
+        # db_table = 'category'
 
 class Product(models.Model):
     name = models.CharField(max_length=45)
@@ -23,8 +23,8 @@ class Product(models.Model):
     donation_value = models.IntegerField()
 
     class Meta:
-        managed = False
-        db_table = 'product'
+        managed = True
+        # db_table = 'product'
 
 
 class ProductProperty(models.Model):
@@ -33,15 +33,15 @@ class ProductProperty(models.Model):
     property_value = models.CharField(max_length=45) #속성 값
 
     class Meta:
-        managed = False
-        db_table = 'product_property'
+        managed = True
+        # db_table = 'product_property'
 
 
 class PropertyName(models.Model):
     property_name = models.CharField(max_length=45)
 
     class Meta:
-        managed = False
-        db_table = 'property_name'
+        managed = True
+        # db_table = 'property_name'
 
 

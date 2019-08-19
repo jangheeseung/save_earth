@@ -9,47 +9,34 @@ from django.db import models
 from django.contrib.auth.models import (BaseUserManager, AbstractBaseUser, PermissionsMixin)
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, name, password=None):
-        """
-        주어진 이메일, 닉네임, 비밀번호 등 개인정보로 User 인스턴스 생성
-        """
+    def _create_user(self, email, password, **extra_fields):
         if not email:
-            raise ValueError(_('Users must have an email address'))
-
-        user = self.model(
-            email=self.normalize_email(email),
-            name=name,
-            # address=address,
-            # tel=tel,
-        )
-
-        user.set_password(password) #set_password() : 패스워드 암호화시키기
-        # user.save(using=self._db)
-        return user
-
-    def create_superuser(self, email, name, password):
-        """
-        주어진 이메일, 닉네임, 비밀번호 등 개인정보로 User 인스턴스 생성
-        단, 최상위 사용자이므로 권한을 부여한다. 
-        """
-        user = self.create_user(
-            email=email,
-            name=name,
-            password=password,
-            # email, name, address, tel, password
-        )
-
-        user.is_superuser = True
-        user.is_staff=True
-        user.is_admin = True
+            raise ValueError('The given email must be set')
+        email = self.normalize_email(email)
+        user = self.model(email=email, **extra_fields)
+        user.set_password(password)
         user.save(using=self._db)
         return user
+
+    def create_user(self, email=None, password=None, **extra_fields):
+        extra_fields.setdefault('is_superuser', False)
+        return self._create_user(email, password, **extra_fields)
+
+    def create_superuser(self, email, password, **extra_fields):
+        extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_staff', True)
+
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('Superuser must have is_superuser=True.')
+        if extra_fields.get('is_staff') is not True:
+            raise ValueError('Superuser must have is_superuser=True.')
+
+        return self._create_user(email, password, **extra_fields)
 
 class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=45, unique=True)
     address = models.CharField(max_length=45)
     email = models.EmailField(max_length=45, unique=True)
-    # password = models.CharField(max_length=45)
     tel = models.CharField(max_length=45)
     monthly_amount = models.CharField(max_length=45, blank=True, default='NULL') #월정액 금액
     donate_value = models.IntegerField(blank=True, default=0) #기부금 총 합
@@ -69,8 +56,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email' #여기서 지정한 모든 필드는 unique=True 여야 한다는데
     
-    REQUIRED_FIELDS = []
-    # REQUIRED_FIELDS = ['name'] #user를 생성하는데 필수적인 필드
+    REQUIRED_FIELDS = ['name'] #user를 생성하는데 필수적인 필드
 
     # USER_TYPE_CHOICES = (
     # ('django', 'Django'),
@@ -83,8 +69,8 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = ('user') #admin 페이지에서 조회할 떄 읽기 쉬운 이름으로 정의하는 옵션
         verbose_name_plural = ('users') #영어 기준으로 복수형 이름으로 정의하는 옵션
         ordering = ('email',) #모델의 정렬 순서 지정, 여러 개일 경우 필드 이름을 리스트로 나열.기본값은 오름차순. -를 붙이면 내림차순
-        managed = False #False일 때 : 모델이 자동으로 테이블을 생성하지 않게 함.
-        db_table = 'user'
+        managed = True #False일 때 : 모델이 자동으로 테이블을 생성하지 않게 함.
+        # db_table = 'user'
 
     def __str__(self):
         return self.email
@@ -103,8 +89,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     #     # Simplest possible answer: All superusers are staff
     #     return self.is_superuser
 
-    get_full_name.short_description = ('Full name')
-
     def has_perm(self, perm, obj=None):
         return self.is_staff
 
@@ -113,26 +97,3 @@ class User(AbstractBaseUser, PermissionsMixin):
     # @property
     # def is_active(self):
     #     return bool(self.is_active)
-
-
-
-# class User(models.Model):
-#     name = models.CharField(max_length=45)
-#     address = models.CharField(max_length=45)
-#     email = models.EmailField(max_length=45)
-#     pw = models.CharField(max_length=45)
-#     tel = models.CharField(max_length=45)
-#     monthly_amount = models.CharField(max_length=45, null=True, blank=True) #월정액 금액
-#     donate_value = models.IntegerField(null=True , blank=True) #기부금 총 합
-#     coin = models.IntegerField(null=True, blank=True)
-#     post_code = models.CharField(max_length=45,null=True, blank=True) #우편번호
-#     term = models.IntegerField(null=True, blank=True) #월정액 기한
-#     use_period = models.IntegerField(null=True, blank=True) #월정액 사용기한
-
-#     def __str__(self):
-#         return  [self.name, self.address, self.email, self.pw, self.tel,
-#         self.monthly_amount, self.donate_value, self.coin, self.post_code, self.term ,self.use_period]
-
-#     class Meta:
-#         managed = False
-#         db_table = 'user'

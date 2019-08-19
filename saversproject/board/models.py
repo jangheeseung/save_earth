@@ -11,10 +11,11 @@ from django.db import models
 class NoticeBoard(models.Model):
     title = models.CharField(max_length=45)
     content = models.CharField(max_length=45)
+    pub_date = models.DateTimeField('date published', default='2019-08-10 12:00')
 
     class Meta:
-        managed = False
-        db_table = 'notice_board'
+        managed = True
+        # db_table = 'notice_board'
 
 
 
@@ -22,18 +23,19 @@ class QABoard(models.Model):
     user = models.ForeignKey('login.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=45)
     content = models.CharField(max_length=45)
+    pub_date = models.DateTimeField('date published', default='2019-08-10 12:00')
 
     class Meta:
-        managed = False
-        db_table = 'q&a_board'
+        managed = True
+        # db_table = 'q&a_board'
 
 
 class QABoardComment(models.Model):
     content = models.CharField(max_length=45)
-    q_a = models.ForeignKey(QABoard, on_delete=models.CASCADE, db_column='q&a_id')  # Field renamed to remove unsuitable characters.
+    q_a = models.ForeignKey(QABoard, on_delete=models.CASCADE)  # Field renamed to remove unsuitable characters.
 
     class Meta:
-        managed = False
-        db_table = 'q&a_board_comment'
+        managed = True
+        # db_table = 'q&a_board_comment'
 
 

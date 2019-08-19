@@ -22,5 +22,5 @@ class Pay(models.Model):
     m_redirect_url = models.CharField(max_length=45, blank=True, null=True)
 
     class Meta:
-        managed = False
-        db_table = 'pay'
+        managed = True
+        # db_table = 'pay'

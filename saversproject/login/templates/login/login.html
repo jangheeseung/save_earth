@@ -1,6 +1,8 @@
 {%extends 'main/layout.html'%}
 {%load staticfiles%}
 {%block content%}
+{% load socialaccount %}
+{% providers_media_js %}
 
         <!-- login시작 -->
         <link rel="stylesheet" href="{%static 'main/css/layout/login.css'%}">
@@ -19,16 +21,20 @@
                                     id="login_id"
                                     aria-describedby="emailHelp"
                                     name="userId"></div>
+                                    {% if error %}
+                                    {{error}}
+                                    {% endif %}
                                 <div class="form-group">
                                     <!-- user_password -->
                                     <label for="login_ps" placeholder="Input password">Password</label>
                                     <input type="password" class="form-control" id="login_ps" name="userPassword"></div>
                                     <!-- login_button -->
-                                    <a class="login_button" href="#"><strong> Login</strong></a>
+                                    <!-- <a class="login_button" href="{% url 'login' %}"><strong> Login</strong></a> -->
+                                    <button type="submit" class="login_button"><strong>Login</strong></button>
                                     <!-- siginup_button -->
                                     <a class="login_button" href="{% url 'signup'%}"><strong> Signup</strong></a>
                                 </form>
-                               <a class="google_button" href="#"><strong> Google login</strong></a>
+                               <a class="google_button" href="{% provider_login_url 'google' %}"><strong> Google login</strong></a>
                             <!-- login끝 -->
 
                         </section>

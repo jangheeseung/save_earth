@@ -14,8 +14,8 @@ class Basket(models.Model):
     status = models.IntegerField() #0이면 장바구니, 1이면 주문
 
     class Meta:
-        managed = False
-        db_table = 'basket'
+        managed = True
+        # db_table = 'basket'
 
 
 
@@ -25,16 +25,16 @@ class Donation(models.Model):
     donation_value = models.IntegerField()
 
     class Meta:
-        managed = False
-        db_table = 'donation'
+        managed = True
+        # db_table = 'donation'
 
 
 class OrderStatus(models.Model):
     order_status = models.CharField(max_length=45)
 
     class Meta:
-        managed = False
-        db_table = 'order_status'
+        managed = True
+        # db_table = 'order_status'
 
 
 class UserOrder(models.Model):
@@ -45,5 +45,5 @@ class UserOrder(models.Model):
     order_status = models.ForeignKey(OrderStatus, on_delete=models.CASCADE) #주문상태
 
     class Meta:
-        managed = False
-        db_table = 'user_order'
+        managed = True
+        # db_table = 'user_order'
