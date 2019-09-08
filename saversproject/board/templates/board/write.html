@@ -5,11 +5,15 @@
         <section id="gtco-welcome" class="bg-white section-padding">
             <div class="board">
                 <!-- Q&A 또는 공지사항이나오게 -->
-                <h1>Question</h1>
+                <h1>{{ word }}</h1>
                 <!-- board_title쓰는 칸 -->
                 <!-- title -->
                 <div class="write_container">
+                    {% if word == 'Question' %}
+                    <form method="POST" action="{% url 'q_create' %}">
+                    {% elif word == 'Notice' %}
                     <form method="POST" action="{% url 'n_create' %}">
+                    {% endif %}
                         {% csrf_token %}
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Title</label>
@@ -28,7 +32,11 @@
                                     <!-- 제출버튼, 뒤로가기버튼 -->
                                     <div class="submit">
                                         <button type="submit" class="btn btn-primary">Submit</button>
+                                        {% if word == 'Question' %}
+                                        <a href="{%url 'qaboard'%}" class="btn btn-primary">Back</a>
+                                        {% elif word == 'Notice' %}
                                         <a href="{%url 'noticeboard'%}" class="btn btn-primary">Back</a>
+                                        {% endif %}
                                     </div>
                                 
                         </form>

@@ -44,9 +44,9 @@
                                     <a href="#">
                                             <tr>
     
-                                                <th scope="row" width="12%">NOTICE</th>
+                                                <th scope="row" width="12%">Q. {{ q.id }}</th>
                                                 <td><a href="{%url 'QandA_detail' q.id %}">{{ q.title }}</td>
-                                                <td>hye ji</td>
+                                                <td>{{ username }}</td>
                                                 <td>{{ q.pub_date }}</td>
                                                 <td>20</td>
     
@@ -72,7 +72,7 @@
                             </table>
                         </div>
                         <div class="Write">
-                            <a href="{%url 'write'%}" class="btn btn-lg btn-primary">Write</a>
+                            <a href="{%url 'write' 'Question' %}" class="btn btn-lg btn-primary">Write</a>
                         </div>
                         <div class="table_page">
                             <nav aria-label="Page navigation example">
