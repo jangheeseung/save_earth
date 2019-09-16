@@ -20,11 +20,11 @@
                                             <img src="{%static 'main/img/user.png'%}"></div>
                                             <div class="user_row">
                                                 <!-- user_name -->
-                                                <h4>안녕하세요 ㅁㅁㅁ님</h4>
+                                                <h4>안녕하세요 {{ user.name }}님</h4>
                                                 <!-- user_email -->
-                                                <h4>email:ㅁㅁㅁㅁ@ㅁㅁㅁ</h4>
+                                                <h4>email: {{ user.email }}</h4>
                                                 <!-- user tel -->
-                                                <h4>tel:000-0000-0000</h4>
+                                                <h4>tel:{{ user.tel }}</h4>
                                             </div>
                                             <div class="user_row">
                                                 <!-- 가운대 점선 줄 -->
@@ -32,12 +32,21 @@
                                             </div>
                                             <div class="user_row">
                                                 <!-- user_coin -->
-                                                <h4>남은 coin:ㅁㅁ
+                                                <h4>남은 coin: {{ user.coin }}
                                                     <!-- <img src="{%static 'main/img/coin.png'%}"> -->
                                                 </h4>
                                                 <br>
                                                     <!-- user_pay(월정액) -->
-                                                    <h4>내가 사용하는 월정액:ㅁㅁㅁ</h4>
+                                                    <h4>내가 사용하는 월정액:
+                                                            {% if user.term == 1 %}
+                                                            {{ '1개월 결제' }}
+                                                            {% elif user.term == 3 %}
+                                                            {{ '3개월 결제' }}
+                                                            {% elif user.term == 6 %}
+                                                            {{ '6개월 결제' }}
+                                                            {% elif user.term == 12 %}
+                                                            {{ '12개월 결제' }}
+                                                            {% endif %}</h4>
                                                 </div>
                                                 <div class="user_row">
                                                     <div class="card" style="width: 38rem; height: 18rem;">

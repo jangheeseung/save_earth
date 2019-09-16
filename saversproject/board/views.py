@@ -2,15 +2,20 @@ from django.shortcuts import get_object_or_404, render, redirect
 from .models import NoticeBoard, QABoard, QABoardComment
 from .forms import NoticeForm, QAForm, CommentForm
 from django.utils import timezone
+# from .decorators import login_required, superuser_required
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import get_user_model
 
 def noticeboard(request):
         notices = NoticeBoard.objects
-        return render(request, 'board/n_board.html', {'notices':notices})
+        usermodel = get_user_model().objects.get(id=request.user.id)
+        return render(request, 'board/n_board.html', {'notices':notices, 'user':usermodel})
 
 def qaboard(request):
-        questions = QABoard.objects
+        questions = QABoard.objects.select_related() #foreign key값을 기준으로 inner join 됨.
         return render(request, 'board/q_board.html', {'questions':questions})
 
+@login_required
 def write(request, word):
         return render(request,'board/write.html', {'word':word})
 def detail(request):

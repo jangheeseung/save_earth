@@ -46,7 +46,7 @@
     
                                                 <th scope="row" width="12%">Q. {{ q.id }}</th>
                                                 <td><a href="{%url 'QandA_detail' q.id %}">{{ q.title }}</td>
-                                                <td>{{ username }}</td>
+                                                <td>{{ q.user.name }}</td>
                                                 <td>{{ q.pub_date }}</td>
                                                 <td>20</td>
     
@@ -54,7 +54,7 @@
                                     </a>
                                     {% endfor %}
                                     {% endif %}
-                                    <tr>
+                                    <!-- <tr>
                                         <th scope="row" width="12%">1</th>
                                         <td>Save Save</td>
                                         <td>Jewel</td>
@@ -67,7 +67,7 @@
                                         <td>twitter</td>
                                         <td>2019.07.06</td>
                                         <td>36</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>

@@ -71,9 +71,11 @@
                                 </tbody>
                             </table>
                         </div>
+                        {% if user.is_superuser %}
                         <div class="Write">
                             <a href="{%url 'write' 'Notice'%}" class="btn btn-lg btn-primary">Write</a>
                         </div>
+                        {% endif %}
                         <div class="table_page">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
