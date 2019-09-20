@@ -43,9 +43,6 @@ def signup(request):
                                 address = request.POST['userAddress'],
                         )
                         
-                        # new_user.tel=request.POST['userTel']
-                        # new_user.address=request.POST['userAddress']
-                        # new_user.save()
                         auth.login(request, new_user, backend='django.contrib.auth.backends.ModelBackend')
                         # return redirect('login')
                         return redirect('main') 

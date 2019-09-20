@@ -100,8 +100,7 @@ class UserChangeForm(forms.ModelForm):
 
     class Meta:
         model = User
-        # fields = ('email', 'password', 'last_name', 'first_name', 'is_active', 'is_superuser')
-        fields = ('email', 'password', 'name', 'is_superuser')
+        fields = ('email', 'password', 'is_active', 'is_superuser')
 
     def clean_password(self):
         # Regardless of what the user provides, return the initial value.
@@ -133,3 +132,22 @@ class UserLoginForm(AuthenticationForm):
     class Meta:
         model = User
         fields = ('email', 'password1')
+
+class SignupForm(forms.Form):
+    class Meta:
+        model = User
+        fields = ['email', 'password', 'name', 'address', 'tel', 'coin', 'monthly_amount', 'donate_value', 'post_code', 'term']
+        # fields = ['email', 'name', 'address', 'tel', 'coin', 'monthly_amount', 'donate_value', 'post_code', 'term']
+
+    def signup(self, request, user):
+        user.name = self.cleaned_data['name']
+        user.password = self.cleaned_data['password']
+        user.address = self.cleaned_data['address']
+        user.email = self.cleaned_data['email']
+        user.tel = self.cleaned_data['tel']
+        user.coin = self.cleaned_data['coin']
+        user.past_code = self.cleaned_data['past_code']
+        user.term = self.cleaned_data['term']
+        user.user_period = self.cleaned_data['user_period']
+        user.donate_value = self.cleaned_data['donate_value']
+        user.save()
