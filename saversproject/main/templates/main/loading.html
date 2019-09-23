@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            type="text/javascript"
+            src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script
+            type="text/javascript"
+            src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+        <meta http-equiv="refresh" content="5; url={%url 'main'%}">
+
+        <style>
+
+            #myCanvas {
+                margin-top: 80px;
+                margin-left: 240px;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="myCanvas"></canvas>
+
+        <script
+            type="text/javascript"
+            src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+        <script>
+
+            var myName = "Savers";
+
+            var red = [0, 100, 63];
+            var orange = [40, 100, 60];
+            var green = [75, 100, 40];
+            var blue = [196, 77, 55];
+            var purple = [280, 50, 60];
+
+            var letterColors = [red, orange, blue, green, purple];
+
+            drawName(myName, letterColors);
+            bubbleShape = "circle";
+            bounceBubbles();
+        </script>
+
+    </body>
+</html>
