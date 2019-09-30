@@ -1,0 +1,93 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'main/css/layout/board.css'%}">
+        <section id="gtco-welcome" class="bg-white section-padding">
+            <div class="board">
+                <h1>NOTICE</h1>
+                <br>
+                    <div class="table_container">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" width="12%">
+                                        <center>CATEGORIZE</center>
+                                    </th>
+                                    <th scope="col" width="50%">
+                                        <center>TITLE</center>
+                                    </th>
+                                    <th scope="col" width="18%">
+                                        <center>NAME</center>
+                                    </th>
+                                    <th scope="col" width="23%">
+                                        <center>DATE</center>
+                                    </th>
+                                    <th scope="col" width="12%">
+                                        <center>HIT</center>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <a href="#">
+                                    <tr>
+
+                                        <th scope="row" width="12%">NOTICE</th>
+                                        <td>
+                                            <a href="{%url 'n_detail'%}">Test1_Save earth</td>
+                                            <td>hye ji</td>
+                                            <td>2019.07.16</td>
+                                            <td>20</td>
+
+                                        </tr>
+                                    </a>
+                                    <tr>
+                                        <th scope="row" width="12%">NOTICE</th>
+                                        <td>Test2_Save Save</td>
+                                        <td>Jewel</td>
+                                        <td>2019.06.22</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" width="12%">NOTICE</th>
+                                        <td>Test3_hungry</td>
+                                        <td>it's me</td>
+                                        <td>2019.07.06</td>
+                                        <td>36</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="Write">
+                            <a href="{%url 'write'%}" class="btn btn-lg btn-primary">Write</a>
+                        </div>
+                        <div class="table_page">
+
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            {%endblock%}
