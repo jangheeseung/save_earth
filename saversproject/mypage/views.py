@@ -15,4 +15,5 @@ def mydetail(request):
 def basket(request):
         return render(request,'mypage/basket.html')
 
-        
+def order(request):
+        return render(request,'mypage/order.html')

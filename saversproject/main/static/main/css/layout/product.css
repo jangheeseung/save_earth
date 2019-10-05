@@ -1,23 +1,162 @@
 input[type="submit"] {
     font-family: FontAwesome;
 }
-img{
-    width: 15em;
-    margin-bottom: 1em;
-    margin-top: 2em;
-}
-.single-service > h3{
-    padding-top: 10px;
-}
-.single-service > p{
-    padding: 10px;
-}
-.container_product{
-    width: 1000px;
-    margin: auto;
-}
 
 input{
     background-color: white;
     border: 0;
+}
+
+img{
+    width: 15em;
+    height: 15em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.single-service > h3{
+    padding-top: 10px;
+}
+
+.single-service > p{
+    padding: 10px;
+}
+
+.single-service{
+    width:16.5em;
+}
+
+h1{
+    padding:0px 3px 0px 3px;
+}
+
+p{
+    padding:0px 3px 0px 3px;
+}
+
+/* ---------로고, 상품------- */
+
+
+#product-border{
+    margin-left:80px;
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+}
+.savimg{
+    margin-left:10px;
+    margin-top:40px;
+}
+
+.hr{
+    margin-left:85px;
+    margin-top:50px;
+}
+.wr{
+    margin-top:50px;
+    margin-left: 32em;
+}
+
+.he{
+    margin-left:500px;
+    margin-top:50px;
+}
+
+/* --------카테고리, 상품--------- */
+
+.category{
+    width:250px;
+    margin-left:70px;
+}
+
+.container_product{
+    width: 1000px;
+    margin-left: 2em;
+}
+
+.product_user{
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.pu_row{
+    flex-direction: column;
+    flex: 0 0 100px;
+    margin-top: 1.5em;
+}
+
+.pu_row:nth-child(2){
+    flex-direction: column;
+    flex: 0 0 100px;
+    margin-top: 1.5em;
+}
+
+.pu_row:nth-child(3){
+    margin-left:2em;
+    flex: 0 0 200px;
+}
+
+.pu_row:nth-child(4){
+    flex: 0 0 200px;
+}
+
+.pu_row:nth-child(5){
+    flex: 0 0 200px;
+}
+
+.pu_row:nth-child(6){
+    flex: 0 0 200px;
+}
+
+.pt{
+    margin-left:50em;
+    margin-bottom: 50px;
+}
+
+/* prodetail의 페이지 */
+.pro_img{
+    width: 700px;
+    height: 600px;
+    margin-left:17em;
+    margin-top:10em;
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: 400px 20px 600px;
+}
+
+.det{
+    margin-left:70px;
+    display: grid;
+    grid-template-rows: 50px 50px;
+}
+
+.bas{
+    width:250px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.bas > a{
+    margin-left:70px;
+}
+
+.back > button{
+    width:200px;
+    height: 40px;
+    margin-left:50px;
+}
+.flex{
+    display: grid;
+    grid-template-columns: 50px 50px;
+}
+.flex > h3{
+    margin-right: 1em;
+}
+.pro_img >img{
+    height: 45em;
+    margin:0em;
+}
+
+#section{
+    margin-left:20px;
 }

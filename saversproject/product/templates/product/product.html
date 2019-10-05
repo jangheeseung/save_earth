@@ -2,97 +2,332 @@
 {%load staticfiles%}
 {%block content%}
     <link rel="stylesheet" href="{%static 'main/css/layout/product.css'%}">
-        <div class="portfolio-area ptb-90">
-            <div class="container_product">
-                <div class="row">
-                  
-                    <div class="col-md-3 col-sm-6">
-                        <!-- 카드1 -->
-                        <div class="single-service white-bg text-center"> 
-                             <a href="{%url 'basket'%}">
-                            <img src="{%static 'main/img/s.jpg'%}">
-                                <h3>Web Design</h3>
-                                <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
-                                    fuga platea eveniet pulvinar praesent
-                                </p>
-                                <a data-toggle="modal" data-target="#exampleModal">
-                                    <form href="#" >
-                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
-                                        4px;'></i> -->
-                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
-                                    </form>
-                                </a>
-                                </a>
-                            </div>
+        <!-- <div class="portfolio-area ptb-90"> -->
+        <div id="product-border">
+            <img src="{%static 'main/img/logo2.png'%}" style="width:100px; height:100px;">
+                <div class="savimg">
+                    <img src="{%static 'main/img/name.png'%}" style="width:100px; height:50px;"></div>
+                    <div class="hr">
+                        <hr style="border: solid 2px rgb(41,146,9); width: 350px;"></div>
+                        <div class="wr">
+                            <h1>BEST</h1>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- 카드2 -->
-                            <div class="single-service white-bg text-center">
-                                <img src="{%static 'main/img/s.jpg'%}">
-                                    <h3>Web Design</h3>
-                                    <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
-                                        fuga platea eveniet pulvinar praesent
-                                    </p>
-
-                                    <form href="#" data-toggle="modal" data-target="#exampleModal">
-                                        <i class="fa fa-shopping-basket" style='font-size:25px; padding-top: 4px;'></i>
-                                    </form>
+                        <div class="he">
+                            <hr style="border: solid 2px rgb(41, 146, 9);width: 350px;"></div>
+                        </div>
+                        <!-- 카테고리 -->
+                        <div class="product_user">
+                            <div class="pu_row">
+                                <div class="category">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">SAVE_EARTH</li>
+                                        <li class="list-group-item">BEST</li>
+                                        <li class="list-group-item">빨대</li>
+                                        <li class="list-group-item">텀블러</li>
+                                        <li class="list-group-item">에코백</li>
+                                        <li class="list-group-item">주방용품</li>
+                                        <li class="list-group-item">욕실용품</li>
+                                        <li class="list-group-item">생활용품</li>
+                                        <li class="list-group-item">기타</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
-                                <!-- 카드3 -->
-                                <div class="single-service white-bg text-center">
-                                    <img src="{%static 'main/img/s.jpg'%}">
-                                        <h3>Development
-                                        </h3>
-                                        <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
-                                            fuga platea eveniet pulvinar praesent
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="container_product">
                                 <div class="col-md-3 col-sm-6">
-                                    <!-- 카드4 -->
-                                    <div class="single-service white-bg text-center">
-                                        <img src="{%static 'main/img/s.jpg'%}">
-                                            <h3>Photography</h3>
-                                            <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex
-                                                fuga platea eveniet pulvinar praesent
-                                            </p>
+                                    <!-- 카드1 -->
+                                    <div class="pu_row">
+                                        <div class="single-service white-bg text-center">
+                                            <a href="{%url 'prodetail'%}">
+                                                <img src="{%static 'main/img/ps.jpg'%}">
+                                                    <h3>종이 빨대</h3>
+                                                    <p>#종이_빨대 #친환경 #리유저블 #재활용 #스타벅스 #종이 #에코스트로우 #플라스틱줄이기 #재활용품 #단단함 #종이빨대_최고
+                                                    </p>
+                                                    <a data-toggle="modal" data-target="#exampleModal">
+                                                        <form href="#">
+                                                            <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                            4px;'></i> -->
+                                                            <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                        </form>
+                                                    </a>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <!-- 카드2 -->
+                                        <div class="pu_row">
+                                            <div class="single-service white-bg text-center">
+                                                <a href="{%url 'prodetail'%}">
+                                                    <img src="{%static 'main/img/s.jpg'%}">
+                                                        <h3>옥수수 빨대</h3>
+                                                        <p>#옥수수_빨대 #친환경 #리유저블 #재활용 #옥수수전분 #종이 #에코스트로우 #플라스틱줄이기 #재활용품 #단단함 #옥수수빨대_최고
+                                                        </p>
+                                                        <a data-toggle="modal" data-target="#exampleModal">
+                                                            <form href="#">
+                                                                <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                4px;'></i> -->
+                                                                <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                            </form>
+                                                        </a>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <!-- 카드3 -->
+                                            <div class="pu_row">
+                                                <div class="single-service white-bg text-center">
+                                                    <a href="{%url 'prodetail'%}">
+                                                        <img src="{%static 'main/img/stains.jpg'%}">
+                                                            <h3>스테인레스 빨대</h3>
+                                                            <p>#스테인레스_빨대 #리유저블 #재활용 #설거지가능 #간편함 #플라스틱줄이기 #스테인레스 #튼튼 #스테인레스빨대_최고
+                                                            </p>
+                                                            <a data-toggle="modal" data-target="#exampleModal">
+                                                                <form href="#">
+                                                                    <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                    4px;'></i> -->
+                                                                    <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                </form>
+                                                            </a>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <!-- 카드4 -->
+                                                <div class="pu_row">
+                                                    <div class="single-service white-bg text-center">
+                                                        <a href="{%url 'prodetail'%}">
+                                                            <img src="{%static 'main/img/ssals.png'%}">
+                                                                <h3>쌀 빨대</h3>
+                                                                <p>#쌀_빨대 #친환경 #리유저블 #재활용 #먹을수있는 #쌀 #에코스트로우 #플라스틱줄이기 #재활용품 #튼튼 #쌀빨대_최고
+                                                                </p>
+                                                                <a data-toggle="modal" data-target="#exampleModal">
+                                                                    <form href="#">
+                                                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                        4px;'></i> -->
+                                                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                    </form>
+                                                                </a>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <!-- 카드5 -->
+                                                    <div class="pu_row">
+                                                        <div class="single-service white-bg text-center">
+                                                            <a href="{%url 'prodetail'%}">
+                                                                <img src="{%static 'main/img/sset.jpg'%}">
+                                                                    <h3>빨대+세척솔+파우치 SET</h3>
+                                                                    <p>#스테인레스 빨대 #친환경 #리유저블 #재활용 #스테인레스 #세트 #에코스트로우 #플라스틱줄이기 #재활용품 #싼가격에_최고품질
+                                                                    </p>
+                                                                    <a data-toggle="modal" data-target="#exampleModal">
+                                                                        <form href="#">
+                                                                            <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                            4px;'></i> -->
+                                                                            <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                        </form>
+                                                                    </a>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-6">
+                                                        <!-- 카드6 -->
+                                                        <div class="pu_row">
+                                                            <div class="single-service white-bg text-center">
+                                                                <a href="{%url 'prodetail'%}">
+                                                                    <img src="{%static 'main/img/bag.jpg'%}">
+                                                                        <h3>에코백</h3>
+                                                                        <p>#에코백 #친환경 #리유저블 #재활용 #어디든_매치가능 #가방 #트렌드 #백팩 #패피들의_필수템 #튼튼함 #에코백_최고
+                                                                        </p>
+                                                                        <a data-toggle="modal" data-target="#exampleModal">
+                                                                            <form href="#">
+                                                                                <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                4px;'></i> -->
+                                                                                <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                            </form>
+                                                                        </a>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-6">
+                                                            <!-- 카드7 -->
+                                                            <div class="pu_row">
+                                                                <div class="single-service white-bg text-center">
+                                                                    <a href="{%url 'prodetail'%}">
+                                                                        <img src="{%static 'main/img/denamoo.jpg'%}">
+                                                                            <h3>대나무 칫솔</h3>
+                                                                            <p>#대나무_칫솔 #친환경 #리유저블 #재활용 #칫솔 #양치도구 #천연칫솔 #칫솔도_대나무 #튼튼함 #대나무칫솔_최고
+                                                                            </p>
+                                                                            <a data-toggle="modal" data-target="#exampleModal">
+                                                                                <form href="#">
+                                                                                    <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                    4px;'></i> -->
+                                                                                    <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                </form>
+                                                                            </a>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-6">
+                                                                <!-- 카드8 -->
+                                                                <div class="pu_row">
+                                                                    <div class="single-service white-bg text-center">
+                                                                        <a href="{%url 'prodetail'%}">
+                                                                            <img src="{%static 'main/img/tum.jpg'%}">
+                                                                                <h3>텀블러</h3>
+                                                                                <p>#텀블러 #친환경 #리유저블 #재활용 #컵 #세련미 #디자인_텀블러 #텀블러는_간지 #튼튼함 #이쁨 #텀블러_최고
+                                                                                </p>
+                                                                                <a data-toggle="modal" data-target="#exampleModal">
+                                                                                    <form href="#">
+                                                                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                        4px;'></i> -->
+                                                                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                    </form>
+                                                                                </a>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3 col-sm-6">
+                                                                    <!-- 카드9 -->
+                                                                    <div class="pu_row">
+                                                                        <div class="single-service white-bg text-center">
+                                                                            <a href="{%url 'prodetail'%}">
+                                                                                <img src="{%static 'main/img/stan.jpg'%}">
+                                                                                    <h3>스테인레스 후라이팬</h3>
+                                                                                    <p>#스테인레스_후라이팬 #친환경 #리유저블 #재활용 #설거지가능 #스테인레스 #튼튼 #스테인레스후라이팬_최고
+                                                                                    </p>
+                                                                                    <a data-toggle="modal" data-target="#exampleModal">
+                                                                                        <form href="#">
+                                                                                            <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                            4px;'></i> -->
+                                                                                            <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                        </form>
+                                                                                    </a>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <!-- 카드10 -->
+                                                                        <div class="pu_row">
+                                                                            <div class="single-service white-bg text-center">
+                                                                                <a href="{%url 'prodetail'%}">
+                                                                                    <img src="{%static 'main/img/doma.jpg'%}">
+                                                                                        <h3>통원목 도마</h3>
+                                                                                        <p>#통원목도마 #친환경 #도마 #원목 #설거지가능 #주방용품 #플라스틱줄이기 #나무도마 #튼튼 #통원목도마_최고
+                                                                                        </p>
+                                                                                        <a data-toggle="modal" data-target="#exampleModal">
+                                                                                            <form href="#">
+                                                                                                <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                                4px;'></i> -->
+                                                                                                <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                            </form>
+                                                                                        </a>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-3 col-sm-6">
+                                                                            <!-- 카드11 -->
+                                                                            <div class="pu_row">
+                                                                                <div class="single-service white-bg text-center">
+                                                                                    <a href="{%url 'prodetail'%}">
+                                                                                        <img src="{%static 'main/img/su.jpg'%}">
+                                                                                            <h3>천연 수세미</h3>
+                                                                                            <p>#천연_수세미 #친환경 #수세미 #천연 #설거지가능 #주방용품 #플라스틱줄이기 #진짜천연 #튼튼 #천연수세미_최고
+                                                                                            </p>
+                                                                                            <a data-toggle="modal" data-target="#exampleModal">
+                                                                                                <form href="#">
+                                                                                                    <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                                    4px;'></i> -->
+                                                                                                    <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                                </form>
+                                                                                            </a>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3 col-sm-6">
+                                                                                <!-- 카드12 -->
+                                                                                <div class="pu_row">
+                                                                                    <div class="single-service white-bg text-center">
+                                                                                        <a href="{%url 'prodetail'%}">
+                                                                                            <img src="{%static 'main/img/gr.jpg'%}">
+                                                                                                <h3>야자수 잎 일회용기</h3>
+                                                                                                <p>#야자수_잎_일회용기 #친환경 #일회용기 #야자수 #주방용품 #일회용품줄이기 #튼튼 #야자수_잎_일회용기_최고
+                                                                                                </p>
+                                                                                                <a data-toggle="modal" data-target="#exampleModal">
+                                                                                                    <form href="#">
+                                                                                                        <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                                                                        4px;'></i> -->
+                                                                                                        <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                                                                    </form>
+                                                                                                </a>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal -->
-                    <div
-                        class="modal fade"
-                        id="exampleModal"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    장바구니에 제품이 담겼습니다
-                                </div>
-                                <div class="modal-footer">
-                                    <!-- 그냥 닫히면 될거같아서close로 햇어용 -->
-                                    <a class="btn btn-primary" data-dismiss="modal">쇼핑이어하기</a>
-                                    <a class="btn btn-primary" href="{%url 'basket'%}">장바구니<a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                           
-
-                            {%endblock%}
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="pt">
+                                                                            <nav aria-label="Page navigation example">
+                                                                                <ul class="pagination">
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                                                            <span aria-hidden="true">&laquo;</span>
+                                                                                            <span class="sr-only">Previous</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#">1</a>
+                                                                                    </li>
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#">2</a>
+                                                                                    </li>
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#">3</a>
+                                                                                    </li>
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#" aria-label="Next">
+                                                                                            <span aria-hidden="true">&raquo;</span>
+                                                                                            <span class="sr-only">Next</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                        </div>
+                                                                        <!-- Modal -->
+                                                                        <div
+                                                                            class="modal fade"
+                                                                            id="exampleModal"
+                                                                            tabindex="-1"
+                                                                            role="dialog"
+                                                                            aria-labelledby="exampleModalLabel"
+                                                                            aria-hidden="true">
+                                                                            <div class="modal-dialog" role="document">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                            <span aria-hidden="true">&times;</span>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                    <div class="modal-body">
+                                                                                        장바구니에 제품이 담겼습니다
+                                                                                    </div>
+                                                                                    <div class="modal-footer">
+                                                                                        <!-- 그냥 닫히면 될거같아서close로 햇어용 -->
+                                                                                        <a class="btn btn-primary" data-dismiss="modal">쇼핑이어하기</a>
+                                                                                        <a class="btn btn-primary" href="{%url 'basket'%}">장바구니<a></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- </div> -->
+                                                                                {%endblock%}

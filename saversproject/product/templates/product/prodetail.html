@@ -1,0 +1,119 @@
+{%extends 'main/layout.html'%}
+{%load staticfiles%}
+{%block content%}
+    <link rel="stylesheet" href="{%static 'main/css/layout/product.css'%}">
+        <div class="pro_img">
+            <!-- <div class="det"> -->
+
+            <img
+                class="card-img-top"
+                src="{%static 'main/img/ps.jpg'%}"
+                alt="Card image cap">
+                <div class="space"></div>
+                <!-- </div> -->
+                <section id="gtco-welcome" class="bg-white section-padding">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="2" style="border-color:white;">
+                                    <h1>종이빨대</h1>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th  style="border-color:white;">
+                                    <h2>친환경 종이빨대를 사용하여 지구환경보호에 기여할 수 있습니다. 
+                                    </h2>
+                                </th>
+                                <th style="border-color:white;"></th>
+                            </tr>
+                            <tr>
+                                    <th colspan="2" style="border-color:white;">
+                                        <h2>가격 : 100개당 250P</h2>
+                                    </th>
+                                </tr>
+                            <th  style="border-color:white;">
+                                <div class="th_text">옵션</div>
+                            </th>
+                            <th  style="border-color:white;">
+                                <div class="th_text">
+                                    <div class="btn-group dropright">
+                                        <button
+                                            type="button"
+                                            class="btn btn-light dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                            옵션 선택
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <tr  style="border-color:white;">
+                               
+                                <th  style="border-color:white;">
+                                    <div class="th_text">
+                                        <div class="bas">
+                                            <a data-toggle="modal" data-target="#exampleModal">
+                                                <form href="#">
+                                                    <!-- <i class="fa fa-shopping-basket" style='font-size:25px; padding-top:
+                                                    4px;'></i> -->
+                                                    <input type="submit" class="search" value="&#xf291;" style="font-size: 25px;"/>
+                                                </form>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th  style="border-color:white;">
+                                    <div class="th_text">
+                                        <div class="back">
+                                            <button type="button" class="btn btn-outline-success">BACK</button>
+                                        </div>
+                                    </div>
+                                </th>
+                                
+                                <!-- <h2 style="color: red;">뒤로</h2> -->
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    장바구니에 제품이 담겼습니다
+                </div>
+                <div class="modal-footer">
+                    <!-- 그냥 닫히면 될거같아서close로 햇어용 -->
+                    <a class="btn btn-primary" data-dismiss="modal">쇼핑이어하기</a>
+                    <a class="btn btn-primary" href="{%url 'basket'%}">장바구니<a></div>
+                    </div>
+                </div>
+            </div>
+
+            {%endblock%}

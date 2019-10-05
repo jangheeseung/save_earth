@@ -29,8 +29,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 .main-menu ul li a {
     color: black;
-    font-family: "Lato", sans-serif;
-    font-size: 13.2px;
+    font-size: 15px;
     font-weight: 400;
     position: relative;
     text-transform: uppercase;
