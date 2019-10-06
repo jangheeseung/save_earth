@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 /* board.html에 대한 css */
+.main-menu ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 h1{
     text-align: center;
     padding-top: 40px;
@@ -79,7 +85,10 @@ h2{
     text-align: center;
     padding-top: 12em;
 }
-
+h6{
+    font-size: 17px;
+    color:black;
+}
 .answer{
     margin-top: 50px;
     margin-left: 50px;

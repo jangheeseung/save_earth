@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+.main-menu ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 input[type="submit"] {
     font-family: FontAwesome;
 }
@@ -8,8 +14,8 @@ input{
 }
 
 img{
-    width: 15em;
-    height: 15em;
+    width: 19em;
+    height: 19em;
     margin-bottom: 1em;
     margin-top: 1em;
 }
@@ -23,7 +29,7 @@ img{
 }
 
 .single-service{
-    width:16.5em;
+    width:21em;
 }
 
 h1{
@@ -36,7 +42,7 @@ p{
 
 /* ---------로고, 상품------- */
 
-
+/* 
 #product-border{
     margin-left:80px;
     margin-top:20px;
@@ -60,19 +66,19 @@ p{
 .he{
     margin-left:500px;
     margin-top:50px;
-}
+} */
 
 /* --------카테고리, 상품--------- */
 
 .category{
-    width:250px;
-    margin-left:70px;
+    width:200px;
+    margin-left:30px;
 }
 
-.container_product{
-    width: 1000px;
-    margin-left: 2em;
-}
+/* .container_product{
+    width: 1200px;
+    
+} */
 
 .product_user{
     margin-bottom: 3em;
@@ -182,7 +188,7 @@ body {
 .container {
     position: relative;
     margin: 0px auto;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     clear: both;
 }
 @media only screen and (min-width: 1200px) {
@@ -230,7 +236,7 @@ body {
   -webkit-border-radius: 2px;
   
   /* == */
-  width: 250px;
+  width: 20dp0px;
   /* == */
 }
 .mcd-menu li {
