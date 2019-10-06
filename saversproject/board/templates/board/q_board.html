@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{%static 'main/css/layout/board.css'%}">
         <section id="gtco-welcome" class="bg-white section-padding">
             <div class="board">
-                <h1>공지사항 / Q & A</h1>
+                <h1>Q & A</h1>
                 <br>
                     <div class="table_container">
                         <table class="table table-hover">
@@ -30,18 +30,6 @@
                             <tbody>
                                 <a href="#">
                                 <tbody>
-                                    <!-- <a href="#">
-                                        <tr>
-
-                                        <th scope="row" width="12%">NOTICE</th>
-                                        <td>
-                                            <a href="{%url 'detail'%}">Save earth</td>
-                                            <td>hye ji</td>
-                                            <td>2019.07.16</td>
-                                            <td>20</td>
-
-                                        </tr>
-                                    </a> -->
                                     {% if questions %}
                                     {% for q in questions.all %}
                                     <a href="#">
@@ -65,8 +53,8 @@
                                         <td>3</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row" width="12%">2</th>
-                                        <td>Larry the Bird</td>
+                                        <th scope="row" width="12%">3</th>
+                                        <td>Question3_Larry the Bird</td>
                                         <td>twitter</td>
                                         <td>2019.07.06</td>
                                         <td>36</td>

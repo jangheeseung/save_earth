@@ -64,3 +64,15 @@ def notice_detail(request, noticeboard_id):
 def QandA_detail(request, qaboard_id):
         q_detail = get_object_or_404(QABoard, pk=qaboard_id)
         return render(request, 'board/q_detail.html', {'q_detail':q_detail})
+        
+# Create your views here.
+# def n_board(request):
+#         return render(request,'board/n_board.html')
+# def q_board(request):
+#         return render(request,'board/q_board.html')
+# def write(request):
+#         return render(request,'board/write.html')
+# def n_detail(request):
+#         return render(request,'board/n_detail.html')
+# def q_detail(request):
+#         return render(request,'board/q_detail.html')
